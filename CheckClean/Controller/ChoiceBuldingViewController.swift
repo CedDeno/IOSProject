@@ -7,15 +7,103 @@
 //
 
 import UIKit
+import Firebase
 
 class ChoiceBuldingViewController: UIViewController {
+    
+    var ref: DatabaseReference!
+    var tabBulding = [Bulding]()
+    var currentUser: User!
 
     @IBOutlet weak var choiceBulding: UIPickerView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        view.modalTransitionStyle = .flipHorizontal
+        view.delegate = self as! protoLogin
+        self.navigationController?.present(view, animated: true, completion: nil)
     }
+    
+    @IBAction func btnAddBulding(_ sender: Any) {
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        self.tabBulding.removeAll()
+        self.choiceBulding.reloadAllComponents()
+        self.currentUser = Auth.auth().currentUser
+        
+        if self.currentUser != nil {
+            self.findBuldings()
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+       do {
+            try Auth.auth().signOut()
+        } catch {
+            
+        }
+        
+    }
+    /**
+     recuperations de tous les ids buldings qui appartien à un user
+    **/
+    func findBuldings(){
+        
+        ref = Database.database().reference(withPath: "User")
+        ref.queryOrderedByKey().queryEqual(toValue: self.currentUser.uid).observe(.value) { (data) in
+            // TODO: changement le traitement des buldings
+            
+            
+            for users in data.children {
+                
+                let user = users as! DataSnapshot
+                let buldingsUser = user.childSnapshot(forPath: "buldings")
+                
+                for bulding in buldingsUser.children {
+                    
+                    let idBulding = bulding as! DataSnapshot
+                    let idB = idBulding.value as! String
+                    let refB = Database.database().reference(withPath: "Buldings")
+                    refB.queryOrderedByKey().queryEqual(toValue: "-\(idB)").observe(.value) { (dataSnapshop) in
+                        
+                        for bulding in dataSnapshop.children {
+                            self.tabBulding.append(Bulding(snap: bulding as! DataSnapshot))
+                        }
+                        self.choiceBulding.reloadAllComponents()
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    
 
+}
+extension ChoiceBuldingViewController: UIPickerViewDelegate, UIPickerViewDataSource{
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return self.tabBulding.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.tabBulding[row].name
+    }
+    
+}
+extension ChoiceBuldingViewController: protoLogin{
+    func recupUser(_ user: User) {
+        self.tabBulding.removeAll()
+        self.choiceBulding.reloadAllComponents()
+        dismiss(animated: true, completion: nil)
+    }
 }
