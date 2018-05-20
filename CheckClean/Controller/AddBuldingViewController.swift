@@ -92,19 +92,29 @@ class AddBuldingViewController: UIViewController {
                 let zip = self.zipBulding.text,
                 let ville = self.villeBulding.text {
                 
-                let newBulding = Bulding(name: name, address: "\(adress) \(zip) \(ville)")
+                //let newBulding = Bulding(name: name, address: "\(adress) \(zip) \(ville)")
                 let userCurrent = Auth.auth().currentUser?.uid
                 
                 ref = Database.database().reference()
                 
                 let key = ref.child("Buldings").childByAutoId().key
+                let user = [
+                    "\(userCurrent!)": "Admin"
+                ]
                 let mybulding = [
                     "id": key,
                     "name": name,
-                    "address": "\(adress), \(zip) - \(ville)"
-                ]
+                    "address": "\(adress), \(zip) - \(ville)",
+                    "user": user
+                    ] as [String : Any]
                 
                 ref.child("Buldings").child(key).setValue(mybulding)
+                
+                /**
+                 ajoute le bulding cree dans la table user
+                **/
+                //ref.child("User").child(userCurrent!).updateChildValues(["buldings":[key:key] as [String : Any]])
+                ref.child("Users").child(userCurrent!).child("buldings").child(key).setValue(key)
                 
                 let alert = UIAlertController(title: "Building Ajouter",
                                               message: "Votre bâtiment à été correctement.",

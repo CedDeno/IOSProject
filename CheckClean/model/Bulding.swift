@@ -28,7 +28,5 @@ class Bulding {
         self.id = snap.key
         self.name =  snap.childSnapshot(forPath: "name").value as! String
         self.address = snap.childSnapshot(forPath: "address").value as! String
-        
-        print(self.id)
     }
 }

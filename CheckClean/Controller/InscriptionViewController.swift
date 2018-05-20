@@ -63,6 +63,7 @@ class InscriptionViewController: UIViewController {
     }
     
     @IBAction func Tap(_ sender: Any) {
+        view.endEditing(true)
     }
     
     func isValid(_ email: String) -> Bool {
@@ -98,7 +99,7 @@ class InscriptionViewController: UIViewController {
                                 "email" : email
                             ]
                             
-                            self.ref.child("User").child(id).setValue(myuser)
+                            self.ref.child("Users").child(id).setValue(myuser)
                             
                             let alert = UIAlertController(title: "ALert", message: "Vvotre compte a ete correctement enregistre", preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "ok", style: .default, handler: { (_) in

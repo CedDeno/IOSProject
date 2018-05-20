@@ -17,7 +17,10 @@
 		4802CAA72095CE6A00227E61 /* CheckCleanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802CAA62095CE6A00227E61 /* CheckCleanUITests.swift */; };
 		4802CAB62095DED200227E61 /* ChoiceBuldingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802CAB52095DED200227E61 /* ChoiceBuldingViewController.swift */; };
 		4802CAB82095DEEA00227E61 /* InscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802CAB72095DEEA00227E61 /* InscriptionViewController.swift */; };
+		481B127C20B16B54003DA9A0 /* ToDOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481B127B20B16B54003DA9A0 /* ToDOViewController.swift */; };
+		482457E120AEBB980059A4E0 /* BuldingStructurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482457E020AEBB980059A4E0 /* BuldingStructurViewController.swift */; };
 		48691E2E20A6036D00DA66B4 /* UserDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48691E2D20A6036D00DA66B4 /* UserDb.swift */; };
+		4896823E20B17E24007048C8 /* ToDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4896823D20B17E24007048C8 /* ToDO.swift */; };
 		48BB32112095F49D00A9CA3D /* ListUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB32102095F49D00A9CA3D /* ListUserTableViewCell.swift */; };
 		48BB3215209606FD00A9CA3D /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB3214209606FD00A9CA3D /* AddViewController.swift */; };
 		48C30AE8209AFDB400E3CC64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48C30AE7209AFDB400E3CC64 /* GoogleService-Info.plist */; };
@@ -59,7 +62,10 @@
 		4802CAA82095CE6A00227E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4802CAB52095DED200227E61 /* ChoiceBuldingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceBuldingViewController.swift; sourceTree = "<group>"; };
 		4802CAB72095DEEA00227E61 /* InscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionViewController.swift; sourceTree = "<group>"; };
+		481B127B20B16B54003DA9A0 /* ToDOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDOViewController.swift; sourceTree = "<group>"; };
+		482457E020AEBB980059A4E0 /* BuldingStructurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuldingStructurViewController.swift; sourceTree = "<group>"; };
 		48691E2D20A6036D00DA66B4 /* UserDb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDb.swift; sourceTree = "<group>"; };
+		4896823D20B17E24007048C8 /* ToDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDO.swift; sourceTree = "<group>"; };
 		48BB32102095F49D00A9CA3D /* ListUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserTableViewCell.swift; sourceTree = "<group>"; };
 		48BB3214209606FD00A9CA3D /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		48C30AE7209AFDB400E3CC64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -159,6 +165,8 @@
 				48BB32102095F49D00A9CA3D /* ListUserTableViewCell.swift */,
 				48BB3214209606FD00A9CA3D /* AddViewController.swift */,
 				48FCB28720A59EE60048AE63 /* AddBuldingViewController.swift */,
+				482457E020AEBB980059A4E0 /* BuldingStructurViewController.swift */,
+				481B127B20B16B54003DA9A0 /* ToDOViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			children = (
 				48FCB28520A5962B0048AE63 /* Bulding.swift */,
 				48691E2D20A6036D00DA66B4 /* UserDb.swift */,
+				4896823D20B17E24007048C8 /* ToDO.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -389,12 +398,15 @@
 			files = (
 				48BB32112095F49D00A9CA3D /* ListUserTableViewCell.swift in Sources */,
 				4802CA892095CE6A00227E61 /* ViewController.swift in Sources */,
+				481B127C20B16B54003DA9A0 /* ToDOViewController.swift in Sources */,
+				4896823E20B17E24007048C8 /* ToDO.swift in Sources */,
 				48BB3215209606FD00A9CA3D /* AddViewController.swift in Sources */,
 				4802CAB62095DED200227E61 /* ChoiceBuldingViewController.swift in Sources */,
 				4802CA872095CE6A00227E61 /* AppDelegate.swift in Sources */,
 				4802CAB82095DEEA00227E61 /* InscriptionViewController.swift in Sources */,
 				48691E2E20A6036D00DA66B4 /* UserDb.swift in Sources */,
 				48FCB28820A59EE60048AE63 /* AddBuldingViewController.swift in Sources */,
+				482457E120AEBB980059A4E0 /* BuldingStructurViewController.swift in Sources */,
 				48FCB28620A5962B0048AE63 /* Bulding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

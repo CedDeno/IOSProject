@@ -19,12 +19,17 @@ class ChoiceBuldingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let view = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        view.modalTransitionStyle = .flipHorizontal
-        view.delegate = self as! protoLogin
-        self.navigationController?.present(view, animated: true, completion: nil)
+        
+        if  Auth.auth().currentUser == nil {
+        
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let view = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            view.modalTransitionStyle = .flipHorizontal
+            view.delegate = self as! protoLogin
+            self.navigationController?.present(view, animated: true, completion: nil)
+        
+        }
+        
     }
     
     @IBAction func btnAddBulding(_ sender: Any) {
@@ -33,6 +38,7 @@ class ChoiceBuldingViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         self.tabBulding.removeAll()
+        self.tabBulding.append(Bulding(name: "Veuillez selectione un Bâtiment", address: ""))
         self.choiceBulding.reloadAllComponents()
         self.currentUser = Auth.auth().currentUser
         
@@ -41,23 +47,13 @@ class ChoiceBuldingViewController: UIViewController {
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-       do {
-            try Auth.auth().signOut()
-        } catch {
-            
-        }
-        
-    }
     /**
      recuperations de tous les ids buldings qui appartien à un user
     **/
     func findBuldings(){
         
-        ref = Database.database().reference(withPath: "User")
+        ref = Database.database().reference(withPath: "Users")
         ref.queryOrderedByKey().queryEqual(toValue: self.currentUser.uid).observe(.value) { (data) in
-            // TODO: changement le traitement des buldings
-            
             
             for users in data.children {
                 
@@ -69,7 +65,7 @@ class ChoiceBuldingViewController: UIViewController {
                     let idBulding = bulding as! DataSnapshot
                     let idB = idBulding.value as! String
                     let refB = Database.database().reference(withPath: "Buldings")
-                    refB.queryOrderedByKey().queryEqual(toValue: "-\(idB)").observe(.value) { (dataSnapshop) in
+                    refB.queryOrderedByKey().queryEqual(toValue: "\(idB)").observe(.value) { (dataSnapshop) in
                         
                         for bulding in dataSnapshop.children {
                             self.tabBulding.append(Bulding(snap: bulding as! DataSnapshot))
@@ -99,10 +95,17 @@ extension ChoiceBuldingViewController: UIPickerViewDelegate, UIPickerViewDataSou
         return self.tabBulding[row].name
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if row != 0 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            //let view = storyboard.instantiateViewController(withIdentifier: <#T##String#>) as! 
+        }
+    }
 }
 extension ChoiceBuldingViewController: protoLogin{
     func recupUser(_ user: User) {
         self.tabBulding.removeAll()
+        self.tabBulding.append(Bulding(name: "Veuillez selectione un Bâtiment", address: ""))
         self.choiceBulding.reloadAllComponents()
         dismiss(animated: true, completion: nil)
     }
