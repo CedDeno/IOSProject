@@ -1,0 +1,6 @@
+framework module Pods_CheckClean {
+  umbrella header "Pods-CheckClean-umbrella.h"
+
+  export *
+  module * { export * }
+}

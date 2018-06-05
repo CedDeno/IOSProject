@@ -7,7 +7,25 @@
 		<key>CheckClean.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4802CA822095CE6A00227E61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4802CA962095CE6A00227E61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4802CAA12095CE6A00227E61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
