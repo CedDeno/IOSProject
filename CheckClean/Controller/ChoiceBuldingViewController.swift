@@ -96,11 +96,15 @@ extension ChoiceBuldingViewController: UIPickerViewDelegate, UIPickerViewDataSou
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
         if row != 0 {
+            //sauvegarde des info du bâtiment dans l'user default
+            UserDefaults.standard.set(self.tabBulding[row].id, forKey: "BuldingId")
+            UserDefaults.standard.set(self.tabBulding[row].name, forKey: "BuldingName")
+            UserDefaults.standard.set(self.tabBulding[row].address, forKey: "BuldingAddress")
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let view = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! TabBarViewController
-            view.bulding = self.tabBulding[row]
                 
             self.navigationController?.pushViewController(view, animated: true)
         }

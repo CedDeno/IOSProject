@@ -21,7 +21,7 @@ class RapportAnnuelViewController: UIViewController {
     
     
     var myRapport: [String:[ZoneControl]]!
-    var buldin: Bulding!
+    var bulding: Bulding!
     var idbulding: String!
     var ref: DatabaseReference!
     var numOffices: Float!
@@ -62,9 +62,17 @@ class RapportAnnuelViewController: UIViewController {
         super.viewDidLoad()
         myRapport = [String:[ZoneControl]]()
         btnSendRapport.isEnabled = false
+        let bName = UserDefaults.standard.string(forKey: "BuldingName")
+        let bAddress = UserDefaults.standard.string(forKey: "BuldingAddress")
+        let bId = UserDefaults.standard.string(forKey: "BuldingId")
+        bulding = Bulding(name: bName!, address: bAddress!, id: bId!)
+        self.idbulding = bId
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        self.navigationController?.navigationBar.topItem?.title = bulding.name
+        
         numcheckTOdo = 0
         zoneRouge = 0
         zonneBleu = 0
@@ -238,7 +246,7 @@ class RapportAnnuelViewController: UIViewController {
             pdf.addText(dateformat.string(from: date))
             pdf.setContentAlignment(.left)
             pdf.addLineSpace(CGFloat(20))
-            pdf.addText(buldin.name!)
+            pdf.addText(bulding.name!)
             pdf.addLineSpace(CGFloat(20))
             
             for (key,item) in myRapport {
@@ -293,7 +301,7 @@ class RapportAnnuelViewController: UIViewController {
                 "note" : Float(p + z),
                 "date" : dateformat.string(from: date)
                 ] as [String : Any]
-            ref.child(buldin.id).child(idControl).setValue(info)
+            ref.child(bulding.id).child(idControl).setValue(info)
             
             let activityViewController = UIActivityViewController(activityItems: [pdfData], applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view

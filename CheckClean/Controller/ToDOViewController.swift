@@ -19,8 +19,19 @@ class ToDOViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let bName = UserDefaults.standard.string(forKey: "BuldingName")
+        let bAddress = UserDefaults.standard.string(forKey: "BuldingAddress")
+        let bId = UserDefaults.standard.string(forKey: "BuldingId")
+        bulding = Bulding(name: bName!, address: bAddress!, id: bId!)
+        
+        
+
 
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = bulding.name
     }
     
     @IBAction func todoBtn(_ sender: Any) {

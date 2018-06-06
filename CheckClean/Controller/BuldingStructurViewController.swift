@@ -29,10 +29,12 @@ class BuldingStructurViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        idBulding = UserDefaults.standard.string(forKey: "BuldingId")
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        self.navigationController?.navigationBar.topItem?.title = UserDefaults.standard.string(forKey: "BuldingName")
         
         self.ref = Database.database().reference(withPath: "BuldingStruct")
         ref.queryOrderedByKey().queryEqual(toValue: idBulding).observe(.value) { (data) in

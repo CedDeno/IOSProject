@@ -29,4 +29,10 @@ class Bulding {
         self.name =  snap.childSnapshot(forPath: "name").value as! String
         self.address = snap.childSnapshot(forPath: "address").value as! String
     }
+    
+    init(name: String, address: String, id: String) {
+        self.id = id
+        self.name = name
+        self.address = address
+    }
 }

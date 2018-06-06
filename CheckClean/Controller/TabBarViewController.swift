@@ -14,7 +14,7 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+/*
         let mytab = self.viewControllers
         
         let todoCtr = mytab![0] as! ToDOViewController
@@ -31,6 +31,7 @@ class TabBarViewController: UITabBarController {
         
         let shemaBulding = mytab![4] as! BuldingStructurViewController
         shemaBulding.idBulding = bulding?.id
+ */
     }
 
 }

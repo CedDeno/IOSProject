@@ -406,7 +406,7 @@
             </objects>
             <point key="canvasLocation" x="2308" y="1289"/>
         </scene>
-        <!--To DO-->
+        <!--Item-->
         <scene sceneID="Neu-zP-bPg">
             <objects>
                 <viewController storyboardIdentifier="ToDOViewController" id="4PP-ju-U5y" customClass="ToDOViewController" customModule="CheckClean" customModuleProvider="target" sceneMemberID="viewController">
@@ -494,7 +494,8 @@
                             <outletCollection property="gestureRecognizers" destination="VXr-Sb-shI" appends="YES" id="smg-r5-ZKd"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="To DO" id="HK5-kx-Bev"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="VhQ-wS-9vO"/>
+                    <navigationItem key="navigationItem" id="IXI-qS-gX8"/>
                     <connections>
                         <outlet property="todoLabel" destination="ifs-Gy-J1D" id="hcA-9K-yh7"/>
                         <outlet property="todoTableview" destination="4da-xg-Yoa" id="3m2-Pa-GtN"/>
@@ -507,7 +508,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3789.5999999999999" y="1288.6056971514245"/>
+            <point key="canvasLocation" x="3790" y="2050"/>
         </scene>
         <!--Rapport Quotidien-->
         <scene sceneID="yjO-yO-7a5">
@@ -523,9 +524,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qPB-A5-Mwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4510" y="1289"/>
+            <point key="canvasLocation" x="4892" y="2050"/>
         </scene>
-        <!--Control Annuel-->
+        <!--Item-->
         <scene sceneID="fyh-tk-zxf">
             <objects>
                 <viewController storyboardIdentifier="RapportAnnuelViewController" id="hko-xU-CdU" customClass="RapportAnnuelViewController" customModule="CheckClean" customModuleProvider="target" sceneMemberID="viewController">
@@ -625,7 +626,7 @@
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7p-Cu-aUu">
                                 <rect key="frame" x="40" y="575" width="295" height="35"/>
-                                <color key="backgroundColor" red="0.61568627450000002" green="0.75686274509999996" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.66274509803921566" green="0.75294117647058822" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="W9o-9Q-3QW"/>
                                 </constraints>
@@ -781,7 +782,8 @@
                             <outletCollection property="gestureRecognizers" destination="wlT-lf-5G9" appends="YES" id="bf8-J7-qNf"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Control Annuel" id="a6P-nm-XUJ"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="8Vt-Hg-sWW"/>
+                    <navigationItem key="navigationItem" id="eJd-de-dJi"/>
                     <connections>
                         <outlet property="btnSendRapport" destination="x7p-Cu-aUu" id="EnB-ND-ob7"/>
                         <outlet property="douche" destination="qWa-qQ-8HZ" id="Z00-lA-prr"/>
@@ -811,9 +813,9 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5367" y="1344"/>
+            <point key="canvasLocation" x="5796" y="2083"/>
         </scene>
-        <!--Personnels-->
+        <!--Item-->
         <scene sceneID="mwj-Jk-u3r">
             <objects>
                 <viewController storyboardIdentifier="TeamViewController" id="bs9-Ad-y2b" customClass="TeamViewController" customModule="CheckClean" customModuleProvider="target" sceneMemberID="viewController">
@@ -901,14 +903,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TEZ-iq-SZL"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Personnels" id="acw-Qy-Yxm"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="ifa-5e-nuk"/>
+                    <navigationItem key="navigationItem" id="B0e-Gw-AY8"/>
                     <connections>
                         <outlet property="teamTableview" destination="eR6-Eh-QOM" id="oKY-uz-sto"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6wh-RF-W4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6129" y="1352"/>
+            <point key="canvasLocation" x="6862" y="2158"/>
         </scene>
         <!--Add View Controller-->
         <scene sceneID="iCz-I0-OGe">
@@ -1097,9 +1100,9 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5366" y="2050"/>
+            <point key="canvasLocation" x="4892" y="2742"/>
         </scene>
-        <!--Shema Bâtiment-->
+        <!--Item-->
         <scene sceneID="brv-aB-PfI">
             <objects>
                 <viewController storyboardIdentifier="BuldingStructurViewController" id="VOj-1M-Fa0" customClass="BuldingStructurViewController" customModule="CheckClean" customModuleProvider="target" sceneMemberID="viewController">
@@ -1325,7 +1328,8 @@
                             <outletCollection property="gestureRecognizers" destination="dTU-Nf-ezt" appends="YES" id="aSb-iw-7ab"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shema Bâtiment" id="RVc-Ek-uTH"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="ls7-6g-ji2"/>
+                    <navigationItem key="navigationItem" id="3wb-4n-dt6"/>
                     <connections>
                         <outlet property="RelaxingSpace" destination="foo-cv-zgK" id="OAy-22-zdZ"/>
                         <outlet property="Restaurant" destination="qbz-DD-jqD" id="LFz-eT-GXg"/>
@@ -1345,7 +1349,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="7034" y="1352"/>
+            <point key="canvasLocation" x="7818" y="2158"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="obk-hb-dZj">
@@ -1376,11 +1380,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4PP-ju-U5y" kind="relationship" relationship="viewControllers" id="56S-ML-Ifb"/>
+                        <segue destination="4PP-ju-U5y" kind="relationship" relationship="viewControllers" id="Mtb-X2-P0A"/>
                         <segue destination="bRg-p4-UqJ" kind="relationship" relationship="viewControllers" id="3Hr-Gk-MOd"/>
-                        <segue destination="hko-xU-CdU" kind="relationship" relationship="viewControllers" id="Vbp-Q0-VeL"/>
-                        <segue destination="bs9-Ad-y2b" kind="relationship" relationship="viewControllers" id="SZ0-M2-Gdl"/>
-                        <segue destination="VOj-1M-Fa0" kind="relationship" relationship="viewControllers" id="SNd-QM-76J"/>
+                        <segue destination="hko-xU-CdU" kind="relationship" relationship="viewControllers" id="QiR-yj-tAn"/>
+                        <segue destination="bs9-Ad-y2b" kind="relationship" relationship="viewControllers" id="Q6N-WK-xSE"/>
+                        <segue destination="VOj-1M-Fa0" kind="relationship" relationship="viewControllers" id="4Fn-1d-3fb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhK-B6-hPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
