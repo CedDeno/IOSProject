@@ -35,6 +35,7 @@ class RapportAnnuelViewController: UIViewController {
     var numParking: Float!
     var numcheckTOdo: Int = 0
     var numcheckDid: Int = 0
+    var pourcent: Float!
     
 
     @IBOutlet weak var progressOffice: UIProgressView!
@@ -205,18 +206,7 @@ class RapportAnnuelViewController: UIViewController {
     
     func makeRowRapport(localname:UIButton, progressBar: UIProgressView, type: UIButton, pourcent: Float) {
         
-        let numCheck = (pourcent/10)
-        if  numCheck >= 1 {
-            let progress =  progressBar.progress + (1/numCheck.rounded(.down))
-                progressBar.setProgress(progress, animated: true)
-        }else if numCheck >= 0.5 {
-            let progress =  progressBar.progress + (1/2)
-            progressBar.setProgress(progress, animated: true)
-        } else {
-            let progress =  progressBar.progress + 1
-            progressBar.setProgress(progress, animated: true)
-        }
-        
+        self.pourcent = pourcent
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let view = storyboard.instantiateViewController(withIdentifier: "AddViewController") as! AddViewController
@@ -317,6 +307,18 @@ extension RapportAnnuelViewController: AddInfoRapport {
         
         if progressBar.progress == 1 {
             button.isEnabled = false
+        }
+        
+        let numCheck = (pourcent/10)
+        if  numCheck >= 1 {
+            let progress =  progressBar.progress + (1/numCheck.rounded(.down))
+            progressBar.setProgress(progress, animated: true)
+        }else if numCheck >= 0.5 {
+            let progress =  progressBar.progress + (1/2)
+            progressBar.setProgress(progress, animated: true)
+        } else {
+            let progress =  progressBar.progress + 1
+            progressBar.setProgress(progress, animated: true)
         }
         
         if myRapport.keys.contains(local) {

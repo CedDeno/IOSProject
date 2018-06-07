@@ -25,12 +25,12 @@ class AddViewController: UIViewController {
     @IBOutlet weak var raiting: UISlider!
     var pictures = [UIImage]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         desc.layer.borderColor = UIColor(red: 186/255, green: 186/255, blue: 186/255, alpha: 0.5).cgColor
         desc.layer.borderWidth = 0.9
         desc.layer.cornerRadius = 10
-        
         
     }
 
@@ -88,6 +88,12 @@ class AddViewController: UIViewController {
         self.view.makeToast("Note : \(message) / 5.0", duration: 3.0, title: title, image: img, completion: nil)
         
     }
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
 }
 extension AddViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
