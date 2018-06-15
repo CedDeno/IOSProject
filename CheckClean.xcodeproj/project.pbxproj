@@ -14,6 +14,8 @@
 		4802CA912095CE6A00227E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4802CA8F2095CE6A00227E61 /* LaunchScreen.storyboard */; };
 		4802CA9C2095CE6A00227E61 /* CheckCleanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802CA9B2095CE6A00227E61 /* CheckCleanTests.swift */; };
 		4802CAA72095CE6A00227E61 /* CheckCleanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802CAA62095CE6A00227E61 /* CheckCleanUITests.swift */; };
+		480873E720CE983C009059A6 /* checkclean.json in Resources */ = {isa = PBXBuildFile; fileRef = 480873E620CE983C009059A6 /* checkclean.json */; };
+		480873EB20CEA146009059A6 /* compo.json in Resources */ = {isa = PBXBuildFile; fileRef = 480873EA20CEA145009059A6 /* compo.json */; };
 		48201E5620C01608000D2B0E /* RapportAnnuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48201E5520C01608000D2B0E /* RapportAnnuelViewController.swift */; };
 		4824883C20C6B55900CB7692 /* Dopestyle.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4824883A20C6B55800CB7692 /* Dopestyle.ttf */; };
 		4824883D20C6B55900CB7692 /* Bright Script Clean.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4824883B20C6B55900CB7692 /* Bright Script Clean.ttf */; };
@@ -36,6 +38,7 @@
 		4847247820C572B80033B381 /* UiimageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4847247720C572B80033B381 /* UiimageExtension.swift */; };
 		48691E2E20A6036D00DA66B4 /* UserDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48691E2D20A6036D00DA66B4 /* UserDb.swift */; };
 		48C30AE8209AFDB400E3CC64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48C30AE7209AFDB400E3CC64 /* GoogleService-Info.plist */; };
+		48DE5C4220CFABA3002DEE59 /* AddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE5C4120CFABA3002DEE59 /* AddTeamViewController.swift */; };
 		48FCB28620A5962B0048AE63 /* Bulding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FCB28520A5962B0048AE63 /* Bulding.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +73,8 @@
 		4802CAA22095CE6A00227E61 /* CheckCleanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckCleanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4802CAA62095CE6A00227E61 /* CheckCleanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCleanUITests.swift; sourceTree = "<group>"; };
 		4802CAA82095CE6A00227E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480873E620CE983C009059A6 /* checkclean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkclean.json; sourceTree = "<group>"; };
+		480873EA20CEA145009059A6 /* compo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = compo.json; sourceTree = "<group>"; };
 		48201E5520C01608000D2B0E /* RapportAnnuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapportAnnuelViewController.swift; sourceTree = "<group>"; };
 		4824883A20C6B55800CB7692 /* Dopestyle.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dopestyle.ttf; sourceTree = "<group>"; };
 		4824883B20C6B55900CB7692 /* Bright Script Clean.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bright Script Clean.ttf"; sourceTree = "<group>"; };
@@ -92,6 +97,7 @@
 		4847247720C572B80033B381 /* UiimageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiimageExtension.swift; sourceTree = "<group>"; };
 		48691E2D20A6036D00DA66B4 /* UserDb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDb.swift; sourceTree = "<group>"; };
 		48C30AE7209AFDB400E3CC64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		48DE5C4120CFABA3002DEE59 /* AddTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamViewController.swift; sourceTree = "<group>"; };
 		48FCB28520A5962B0048AE63 /* Bulding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulding.swift; sourceTree = "<group>"; };
 		64AC6BC8A2AF198BDFAB0DAC /* Pods_CheckClean.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckClean.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		987F530FD20EFFCBC26A5F49 /* Pods-CheckClean.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckClean.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckClean/Pods-CheckClean.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +164,8 @@
 				4802CA8D2095CE6A00227E61 /* Assets.xcassets */,
 				4802CA8F2095CE6A00227E61 /* LaunchScreen.storyboard */,
 				48C30AE7209AFDB400E3CC64 /* GoogleService-Info.plist */,
+				480873E620CE983C009059A6 /* checkclean.json */,
+				480873EA20CEA145009059A6 /* compo.json */,
 				4802CA922095CE6A00227E61 /* Info.plist */,
 			);
 			path = CheckClean;
@@ -184,6 +192,7 @@
 		4802CAB42095DE0800227E61 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				48201E5520C01608000D2B0E /* RapportAnnuelViewController.swift */,
 				483AFC0A20B4BF0E00F2E81C /* AddBuldingViewController.swift */,
 				483AFC0C20B4BF0E00F2E81C /* AddViewController.swift */,
 				483AFC0B20B4BF0E00F2E81C /* BuldingStructurViewController.swift */,
@@ -194,8 +203,8 @@
 				483AFC0D20B4BF0E00F2E81C /* ViewController.swift */,
 				482BB6E820B81AB90029A367 /* TabBarViewController.swift */,
 				4829434520B89C64000C81BA /* TeamViewController.swift */,
-				48201E5520C01608000D2B0E /* RapportAnnuelViewController.swift */,
 				4826212020C1567500CAD882 /* PicturesCollectionViewCell.swift */,
+				48DE5C4120CFABA3002DEE59 /* AddTeamViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -372,12 +381,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480873EB20CEA146009059A6 /* compo.json in Resources */,
 				4824883C20C6B55900CB7692 /* Dopestyle.ttf in Resources */,
 				4824883D20C6B55900CB7692 /* Bright Script Clean.ttf in Resources */,
 				4802CA912095CE6A00227E61 /* LaunchScreen.storyboard in Resources */,
 				48C30AE8209AFDB400E3CC64 /* GoogleService-Info.plist in Resources */,
 				4802CA8E2095CE6A00227E61 /* Assets.xcassets in Resources */,
 				4802CA8C2095CE6A00227E61 /* Main.storyboard in Resources */,
+				480873E720CE983C009059A6 /* checkclean.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,22 +418,26 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CheckClean/Pods-CheckClean-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SimplePDF/SimplePDF.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimplePDF.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +483,7 @@
 				484665EF20C2278000556493 /* ZoneControl.swift in Sources */,
 				483AFC1420B4BF0E00F2E81C /* AddViewController.swift in Sources */,
 				4802CA872095CE6A00227E61 /* AppDelegate.swift in Sources */,
+				48DE5C4220CFABA3002DEE59 /* AddTeamViewController.swift in Sources */,
 				483AFC1020B4BF0E00F2E81C /* ToDOViewController.swift in Sources */,
 				483AFC1220B4BF0E00F2E81C /* AddBuldingViewController.swift in Sources */,
 				483AFC1620B4BF0E00F2E81C /* InscriptionViewController.swift in Sources */,

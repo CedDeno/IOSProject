@@ -9,8 +9,10 @@
 import UIKit
 
 class ToDOViewController: UIViewController {
+   
     
-    var bulding: Bulding!
+    
+    var bulding: Bulding = Bulding(name: "", address: "")
 
     @IBOutlet weak var todoTableview: UITableView!
     @IBOutlet weak var todoLabel: UITextField!
@@ -23,11 +25,7 @@ class ToDOViewController: UIViewController {
         let bAddress = UserDefaults.standard.string(forKey: "BuldingAddress")
         let bId = UserDefaults.standard.string(forKey: "BuldingId")
         bulding = Bulding(name: bName!, address: bAddress!, id: bId!)
-        
-        
 
-
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -109,3 +107,4 @@ extension ToDOViewController: UITableViewDelegate, UITableViewDataSource{
         
     }
 }
+

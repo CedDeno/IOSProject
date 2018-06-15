@@ -28,9 +28,21 @@ class TeamViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.topItem?.title = bulding.name
+        
+        self.navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "addUser"),style: .plain, target: self, action: #selector(addUser))
         findAllUsers()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.rightBarButtonItem = nil
+    }
+    
+    @objc func addUser() {
+        let storyboard =  UIStoryboard(name: "Main", bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: "AddTeamViewController") as! AddTeamViewController
+        view.bulding = self.bulding
+        self.present(view, animated: true, completion: nil)
+    }
     func findAllUsers() {
         tabUser.removeAll()
         

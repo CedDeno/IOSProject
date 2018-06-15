@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 import Firebase
 
 class ChoiceBuldingViewController: UIViewController {
@@ -20,22 +21,36 @@ class ChoiceBuldingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if  Auth.auth().currentUser == nil {
-        
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let view = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-            view.modalTransitionStyle = .flipHorizontal
-            view.delegate = self as! protoLogin
-            self.navigationController?.present(view, animated: true, completion: nil)
-        
+        let animationView = LOTAnimationView(name: "checkclean")
+        let width = view.frame.size.width + 50
+        animationView.frame = CGRect(x: 30, y: 20, width: 10, height: 50)
+        //animationView.backgroundColor = UIColor.black
+        self.view.addSubview(animationView)
+        animationView.play{ (finished) in
+            
         }
+        
+       currentUserExiste()
         
     }
     
     @IBAction func btnAddBulding(_ sender: Any) {
     }
     
+    func currentUserExiste() {
+        if  Auth.auth().currentUser == nil {
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let view = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            view.modalTransitionStyle = .flipHorizontal
+            view.delegate = self as! protoLogin
+            self.navigationController?.present(view, animated: true, completion: nil)
+            
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
+        currentUserExiste()
         
         self.tabBulding.removeAll()
         self.tabBulding.append(Bulding(name: "Veuillez selectione un Bâtiment", address: ""))
@@ -70,6 +85,7 @@ class ChoiceBuldingViewController: UIViewController {
                         for bulding in dataSnapshop.children {
                             self.tabBulding.append(Bulding(snap: bulding as! DataSnapshot))
                         }
+                        print("\(self.tabBulding.count)")
                         self.choiceBulding.reloadAllComponents()
                     }
                 }

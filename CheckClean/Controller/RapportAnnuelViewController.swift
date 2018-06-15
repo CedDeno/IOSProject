@@ -68,17 +68,6 @@ class RapportAnnuelViewController: UIViewController {
         let bId = UserDefaults.standard.string(forKey: "BuldingId")
         bulding = Bulding(name: bName!, address: bAddress!, id: bId!)
         self.idbulding = bId
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-        self.navigationController?.navigationBar.topItem?.title = bulding.name
-        
-        numcheckTOdo = 0
-        zoneRouge = 0
-        zonneBleu = 0
-        numZOneBlue = 0
-        numZoneRouge = 0
         
         self.ref = Database.database().reference(withPath: "BuldingStruct")
         ref.queryOrderedByKey().queryEqual(toValue: idbulding).observe(.value) { (data) in
@@ -98,14 +87,14 @@ class RapportAnnuelViewController: UIViewController {
                 self.numMeettingRoom = Float( (bulding.childSnapshot(forPath: "mettingRoom").value as? String)!)
                 
                 self.knowTOdoCheck(num: self.numKitchenette / 10)
-                 self.knowTOdoCheck(num: self.numOffices / 10)
-                 self.knowTOdoCheck(num: self.numParking / 10)
-                 self.knowTOdoCheck(num: self.numShowers / 10)
-                 self.knowTOdoCheck(num: self.numOpenOffice / 10)
-                 self.knowTOdoCheck(num: self.numWc / 10)
-                 self.knowTOdoCheck(num: self.numRelaxroom / 10)
-                 self.knowTOdoCheck(num: self.numRestaurant / 10)
-                 self.knowTOdoCheck(num: self.numMeettingRoom / 10)
+                self.knowTOdoCheck(num: self.numOffices / 10)
+                self.knowTOdoCheck(num: self.numParking / 10)
+                self.knowTOdoCheck(num: self.numShowers / 10)
+                self.knowTOdoCheck(num: self.numOpenOffice / 10)
+                self.knowTOdoCheck(num: self.numWc / 10)
+                self.knowTOdoCheck(num: self.numRelaxroom / 10)
+                self.knowTOdoCheck(num: self.numRestaurant / 10)
+                self.knowTOdoCheck(num: self.numMeettingRoom / 10)
                 
                 
                 if self.numOffices == 0  {
@@ -131,6 +120,7 @@ class RapportAnnuelViewController: UIViewController {
                 if self.numShowers == 0 {
                     self.progressShower.setProgress(1, animated: true)
                     self.douche.isEnabled = false
+                    self.douche.isUserInteractionEnabled = false
                 }
                 if self.numWc == 0 {
                     self.progressWc.setProgress(1, animated: true)
@@ -147,6 +137,18 @@ class RapportAnnuelViewController: UIViewController {
                 
             }
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        self.navigationController?.navigationBar.topItem?.title = bulding.name
+        numcheckTOdo = 0
+        zoneRouge = 0
+        zonneBleu = 0
+        numZOneBlue = 0
+        numZoneRouge = 0
+        
+       
     }
    
     @IBAction func btn(_ sender: UIButton) {
@@ -305,10 +307,6 @@ class RapportAnnuelViewController: UIViewController {
 extension RapportAnnuelViewController: AddInfoRapport {
     func add(local: String, zone: ZoneControl, button: UIButton, progressBar: UIProgressView) {
         
-        if progressBar.progress == 1 {
-            button.isEnabled = false
-        }
-        
         let numCheck = (pourcent/10)
         if  numCheck >= 1 {
             let progress =  progressBar.progress + (1/numCheck.rounded(.down))
@@ -319,6 +317,10 @@ extension RapportAnnuelViewController: AddInfoRapport {
         } else {
             let progress =  progressBar.progress + 1
             progressBar.setProgress(progress, animated: true)
+        }
+        
+        if progressBar.progress == 1 {
+            button.isEnabled = false
         }
         
         if myRapport.keys.contains(local) {

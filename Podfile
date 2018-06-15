@@ -11,4 +11,6 @@ pod 'Firebase/Database'
 pod 'RealmSwift'
 pod 'Toast-Swift', '~> 3.0.1'
 pod 'SimplePDF'
+pod 'lottie-ios'
+pod 'IQKeyboardManagerSwift', '5.0.0'
 end

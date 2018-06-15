@@ -32,6 +32,8 @@ class AddViewController: UIViewController {
         desc.layer.borderWidth = 0.9
         desc.layer.cornerRadius = 10
         
+        self.view.makeToast("La Note par defaut est à 1 / 4. La plus haute 5/5",
+                            duration: 4.0, title: "Rappel", image: UIImage(named: "attention"), completion: nil)
     }
 
     
@@ -45,13 +47,19 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func btnSendRapport(_ sender: Any) {
-        if let title = local.text, let des = desc.text, let rate = raiting?.value{
-            if pictures.count == 0 {
-                let zoneC = ZoneControl(title: title, description: des, rating: rate)
-                delegat.add(local: self.localName, zone: zoneC, button: button, progressBar: progressBar )
-            }else {
-                let zoneC = ZoneControl(title: title, description: des, rating: rate, tabimage: pictures)
-                delegat.add(local: self.localName, zone: zoneC, button: button, progressBar: progressBar)
+        let labTitle = checkInfo(value: local.text!)
+        let labDesc = checkInfo(value: desc.text!)
+        
+        if  labTitle && labDesc{
+        
+            if let title = local.text, let des = desc.text, let rate = raiting?.value{
+                if pictures.count == 0 {
+                    let zoneC = ZoneControl(title: title, description: des, rating: rate)
+                    delegat.add(local: self.localName, zone: zoneC, button: button, progressBar: progressBar )
+                }else {
+                    let zoneC = ZoneControl(title: title, description: des, rating: rate, tabimage: pictures)
+                    delegat.add(local: self.localName, zone: zoneC, button: button, progressBar: progressBar)
+                }
             }
         }
        
@@ -59,15 +67,15 @@ class AddViewController: UIViewController {
     
     func showToast(_ message: String) {
         var img = UIImage(named: "bad")
-        var title = ""
+        var title = "Trés mauvais"
         switch Double( message) {
         case 1.0:
             img = UIImage.init(named: "sBad")
-            title = "Trés mauvais"
+            title = "Mauvais"
             break
         case 2.0:
             img = UIImage.init(named: "middle")
-            title = "Mauvais"
+            title = "Moyenne"
             break
         case 3.0:
             img = UIImage.init(named: "correct")
@@ -85,7 +93,7 @@ class AddViewController: UIViewController {
             break
         }
         
-        self.view.makeToast("Note : \(message) / 5.0", duration: 3.0, title: title, image: img, completion: nil)
+        self.view.makeToast("Note : \(message) / 4.0", duration: 3.0, title: title, image: img, completion: nil)
         
     }
     
@@ -93,6 +101,13 @@ class AddViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    func checkInfo(value: String) -> Bool {
+        if value.count == 0 {
+            self.view.makeToast("Veuillez remplire tous les champs")
+            return false
+        }
+        return true
+    }
     
 }
 extension AddViewController: UICollectionViewDelegate, UICollectionViewDataSource {
