@@ -21,6 +21,7 @@
 		4824883D20C6B55900CB7692 /* Bright Script Clean.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4824883B20C6B55900CB7692 /* Bright Script Clean.ttf */; };
 		4824883F20C6D2DB00CB7692 /* aidememoire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4824883E20C6D2DB00CB7692 /* aidememoire.swift */; };
 		4826212120C1567500CAD882 /* PicturesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4826212020C1567500CAD882 /* PicturesCollectionViewCell.swift */; };
+		4828DE2E20D3CD01007C1512 /* RapportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828DE2D20D3CD01007C1512 /* RapportViewController.swift */; };
 		4829434620B89C64000C81BA /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4829434520B89C64000C81BA /* TeamViewController.swift */; };
 		482BB6E920B81AB90029A367 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BB6E820B81AB90029A367 /* TabBarViewController.swift */; };
 		483AFC0F20B4BF0E00F2E81C /* ListUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483AFC0720B4BF0E00F2E81C /* ListUserTableViewCell.swift */; };
@@ -37,6 +38,7 @@
 		484665F120C22A4E00556493 /* DictionaryRapport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484665F020C22A4E00556493 /* DictionaryRapport.swift */; };
 		4847247820C572B80033B381 /* UiimageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4847247720C572B80033B381 /* UiimageExtension.swift */; };
 		48691E2E20A6036D00DA66B4 /* UserDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48691E2D20A6036D00DA66B4 /* UserDb.swift */; };
+		487790A220D69A610023709E /* leftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487790A120D69A610023709E /* leftViewController.swift */; };
 		48C30AE8209AFDB400E3CC64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48C30AE7209AFDB400E3CC64 /* GoogleService-Info.plist */; };
 		48DE5C4220CFABA3002DEE59 /* AddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE5C4120CFABA3002DEE59 /* AddTeamViewController.swift */; };
 		48FCB28620A5962B0048AE63 /* Bulding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FCB28520A5962B0048AE63 /* Bulding.swift */; };
@@ -80,6 +82,7 @@
 		4824883B20C6B55900CB7692 /* Bright Script Clean.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bright Script Clean.ttf"; sourceTree = "<group>"; };
 		4824883E20C6D2DB00CB7692 /* aidememoire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aidememoire.swift; sourceTree = "<group>"; };
 		4826212020C1567500CAD882 /* PicturesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesCollectionViewCell.swift; sourceTree = "<group>"; };
+		4828DE2D20D3CD01007C1512 /* RapportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapportViewController.swift; sourceTree = "<group>"; };
 		4829434520B89C64000C81BA /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		482BB6E820B81AB90029A367 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		483AFC0720B4BF0E00F2E81C /* ListUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListUserTableViewCell.swift; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 		484665F020C22A4E00556493 /* DictionaryRapport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRapport.swift; sourceTree = "<group>"; };
 		4847247720C572B80033B381 /* UiimageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiimageExtension.swift; sourceTree = "<group>"; };
 		48691E2D20A6036D00DA66B4 /* UserDb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDb.swift; sourceTree = "<group>"; };
+		487790A120D69A610023709E /* leftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftViewController.swift; sourceTree = "<group>"; };
 		48C30AE7209AFDB400E3CC64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		48DE5C4120CFABA3002DEE59 /* AddTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamViewController.swift; sourceTree = "<group>"; };
 		48FCB28520A5962B0048AE63 /* Bulding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulding.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 		4802CAB42095DE0800227E61 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4877909E20D699D80023709E /* slideController */,
 				48201E5520C01608000D2B0E /* RapportAnnuelViewController.swift */,
 				483AFC0A20B4BF0E00F2E81C /* AddBuldingViewController.swift */,
 				483AFC0C20B4BF0E00F2E81C /* AddViewController.swift */,
@@ -205,6 +210,7 @@
 				4829434520B89C64000C81BA /* TeamViewController.swift */,
 				4826212020C1567500CAD882 /* PicturesCollectionViewCell.swift */,
 				48DE5C4120CFABA3002DEE59 /* AddTeamViewController.swift */,
+				4828DE2D20D3CD01007C1512 /* RapportViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,6 +246,14 @@
 				4847247720C572B80033B381 /* UiimageExtension.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		4877909E20D699D80023709E /* slideController */ = {
+			isa = PBXGroup;
+			children = (
+				487790A120D69A610023709E /* leftViewController.swift */,
+			);
+			path = slideController;
 			sourceTree = "<group>";
 		};
 		48FCB28420A596090048AE63 /* model */ = {
@@ -486,10 +500,12 @@
 				48DE5C4220CFABA3002DEE59 /* AddTeamViewController.swift in Sources */,
 				483AFC1020B4BF0E00F2E81C /* ToDOViewController.swift in Sources */,
 				483AFC1220B4BF0E00F2E81C /* AddBuldingViewController.swift in Sources */,
+				487790A220D69A610023709E /* leftViewController.swift in Sources */,
 				483AFC1620B4BF0E00F2E81C /* InscriptionViewController.swift in Sources */,
 				48691E2E20A6036D00DA66B4 /* UserDb.swift in Sources */,
 				483AFC1320B4BF0E00F2E81C /* BuldingStructurViewController.swift in Sources */,
 				4824883F20C6D2DB00CB7692 /* aidememoire.swift in Sources */,
+				4828DE2E20D3CD01007C1512 /* RapportViewController.swift in Sources */,
 				48FCB28620A5962B0048AE63 /* Bulding.swift in Sources */,
 				4847247820C572B80033B381 /* UiimageExtension.swift in Sources */,
 			);

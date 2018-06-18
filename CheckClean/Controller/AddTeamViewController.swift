@@ -14,7 +14,7 @@ class AddTeamViewController: UIViewController {
     
     var ref: DatabaseReference!
     var bulding = Bulding()
-    var s: String = "client"
+    var s: String = "Team"
     @IBOutlet weak var emailToCheck: UITextField!
     @IBOutlet weak var statusTeam: UISwitch!
     override func viewDidLoad() {
@@ -22,8 +22,11 @@ class AddTeamViewController: UIViewController {
     }
     
     
-    @IBAction func checkAddTeam(_ sender: UITextField) {
+    @IBAction func checkAddTeam(_ sender: Any) {
         var insert = false
+        if  statusTeam.isOn {
+            s = "Client"
+        }
         if let myEmail = emailToCheck.text {
             self.ref = Database.database().reference(withPath: "Users")
             
@@ -39,7 +42,7 @@ class AddTeamViewController: UIViewController {
                             self.ref.child(id).child("buldings").child(self.bulding.id).setValue(self.bulding.id)
                             
                             self.ref = Database.database().reference(withPath: "Buldings")
-                            self.ref.child(self.bulding.id).child("user").child(id).setValue("team")
+                            self.ref.child(self.bulding.id).child("user").child(id).setValue(self.s)
                             insert =  true
                             break
                         }
@@ -63,8 +66,7 @@ class AddTeamViewController: UIViewController {
         
     }
     
-    @IBAction func btnAddTeam(_ sender: Any) {
-    }
+   
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         emailToCheck.resignFirstResponder()

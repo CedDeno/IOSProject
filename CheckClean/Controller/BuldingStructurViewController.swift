@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Toast_Swift
 
 class BuldingStructurViewController: UIViewController {
     
@@ -91,7 +92,12 @@ class BuldingStructurViewController: UIViewController {
                     self.ref = Database.database().reference()
                     ref.child("BuldingStruct").child(self.idBulding).setValue(tabStruct)
                     
+                    self.view.makeToast("Les changements sont accepter")
+                    
+                    self.tabBarController?.selectedIndex = 0
             }
+        } else {
+            self.view.makeToast("Aucun changement à été effectuer.")
         }
     }
     

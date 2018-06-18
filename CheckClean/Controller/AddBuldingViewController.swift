@@ -138,4 +138,9 @@ class AddBuldingViewController: UIViewController {
         }
     }
     
+    @IBAction func btnAnnuler(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
 }

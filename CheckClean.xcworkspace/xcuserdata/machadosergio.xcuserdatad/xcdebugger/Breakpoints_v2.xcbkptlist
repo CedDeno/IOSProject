@@ -58,7 +58,7 @@
                   moduleName = "CheckClean"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/machadosergio/Documents/swift/checkclean+Ios/CheckClean/Controller/AddViewController.swift"
-                  timestampString = "550747438.9985501"
+                  timestampString = "550766133.150327"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "53"
@@ -73,7 +73,7 @@
                   moduleName = "CheckClean"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/machadosergio/Documents/swift/checkclean+Ios/CheckClean/Controller/AddViewController.swift"
-                  timestampString = "550747439.0007581"
+                  timestampString = "550766133.152619"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "53"
@@ -100,12 +100,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CheckClean/Controller/AddTeamViewController.swift"
-            timestampString = "550748822.8577189"
+            timestampString = "550766364.405823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "checkAddTeam(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckClean/Controller/BuldingStructurViewController.swift"
+            timestampString = "550766364.40639"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "btnStructureBulding(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckClean/Controller/BuldingStructurViewController.swift"
+            timestampString = "550766364.406745"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "btnStructureBulding(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
