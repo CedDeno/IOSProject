@@ -14,6 +14,9 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBar.barTintColor =  UIColor(cgColor: ColorNav().getColorButton())
+        self.tabBar.tintColor = UIColor(cgColor: ColorNav().getColorNav())
 /*
         let mytab = self.viewControllers
         

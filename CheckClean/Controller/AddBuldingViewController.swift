@@ -13,6 +13,8 @@ class AddBuldingViewController: UIViewController {
 
     var ref: DatabaseReference!
     
+    @IBOutlet weak var btnAnnuler: UIButton!
+    @IBOutlet weak var btnAddbulding: UIButton!
     @IBOutlet weak var nameBulding: UITextField!
     @IBOutlet weak var adressBulding: UITextField!
     @IBOutlet weak var zipBulding: UITextField!
@@ -27,7 +29,8 @@ class AddBuldingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        btnAddbulding.backgroundColor = UIColor(cgColor: ColorNav().getColorButton())
+       btnAnnuler.backgroundColor = UIColor(cgColor: ColorNav().getColorButton())
     }
     
     //checking si user entre donnes correctes

@@ -31,11 +31,15 @@ class BuldingStructurViewController: UIViewController {
         super.viewDidLoad()
 
         idBulding = UserDefaults.standard.string(forKey: "BuldingId")
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
         self.navigationController?.navigationBar.topItem?.title = UserDefaults.standard.string(forKey: "BuldingName")
+        
+        self.navigationController?.navigationBar.topItem?.rightBarButtonItem =
+            UIBarButtonItem(image: UIImage(named: "settings"), style: .plain, target: self, action: #selector(settingsItem))
         
         self.ref = Database.database().reference(withPath: "BuldingStruct")
         ref.queryOrderedByKey().queryEqual(toValue: idBulding).observe(.value) { (data) in
@@ -52,6 +56,13 @@ class BuldingStructurViewController: UIViewController {
                 self.numMettingRoom.text = info.childSnapshot(forPath: "mettingRoom").value as? String
             }
         }
+    }
+    
+    @objc func settingsItem() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func closeKeyboard(_ sender: Any) {

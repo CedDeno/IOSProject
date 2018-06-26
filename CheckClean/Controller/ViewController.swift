@@ -15,12 +15,16 @@ protocol protoLogin: NSObjectProtocol {
 
 class ViewController: UIViewController{
 
+    @IBOutlet weak var btnInscription: UIButton!
+    @IBOutlet weak var btnConection: UIButton!
     @IBOutlet weak var login: UITextField!
     @IBOutlet weak var password: UITextField!
     weak var delegate: protoLogin?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnConection.backgroundColor = UIColor(cgColor: ColorNav().getColorButton())
+        btnInscription.backgroundColor = UIColor(cgColor: ColorNav().getColorButton())
         
     }
     

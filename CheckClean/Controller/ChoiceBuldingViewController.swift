@@ -21,10 +21,11 @@ class ChoiceBuldingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor(cgColor: ColorNav().getColorButton())
+        self.navigationController?.navigationBar.barTintColor = UIColor(cgColor: ColorNav().getColorNav())
+        
         let animationView = LOTAnimationView(name: "checkclean")
-        let width = view.frame.size.width + 50
         animationView.frame = CGRect(x: 30, y: 20, width: 10, height: 50)
-        //animationView.backgroundColor = UIColor.black
         self.view.addSubview(animationView)
         animationView.play{ (finished) in
             

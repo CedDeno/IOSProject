@@ -16,6 +16,7 @@ class InscriptionViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var repeatPassword: UITextField!
+    @IBOutlet weak var btnEnregistre: UIButton!
     
     var validEmail = false
     var validPassword = false
@@ -23,7 +24,7 @@ class InscriptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        btnEnregistre.backgroundColor = UIColor(cgColor: ColorNav().getColorButton())
         // Do any additional setup after loading the view.
     }
     

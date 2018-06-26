@@ -21,6 +21,7 @@ class ToDOViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let bName = UserDefaults.standard.string(forKey: "BuldingName")
         let bAddress = UserDefaults.standard.string(forKey: "BuldingAddress")
         let bId = UserDefaults.standard.string(forKey: "BuldingId")
