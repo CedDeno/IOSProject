@@ -14,7 +14,7 @@ class UserDB {
     var name: String?
     var lastname: String?
     var phone: String?
-    var email: String?
+    var email: String!
     var buldings = [Bulding]()
     
     

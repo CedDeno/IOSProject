@@ -16,11 +16,18 @@ class ToDOViewController: UIViewController {
 
     @IBOutlet weak var todoTableview: UITableView!
     @IBOutlet weak var todoLabel: UITextField!
+    @IBOutlet weak var btnTodo: UIButton!
+    
     
     var listTodo = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.topItem?.leftBarButtonItem?.title = NSLocalizedString("BTN_BACK", comment: "")
+        
+        todoLabel.placeholder = NSLocalizedString("PLACEHOLDER_TODO", comment: "")
+        btnTodo.setTitle(NSLocalizedString("BTN_TODO", comment: ""), for: .normal)
         
         let bName = UserDefaults.standard.string(forKey: "BuldingName")
         let bAddress = UserDefaults.standard.string(forKey: "BuldingAddress")

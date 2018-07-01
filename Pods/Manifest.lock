@@ -1,4 +1,7 @@
 PODS:
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
   - Firebase/Auth (4.5.0):
     - Firebase/Core
     - FirebaseAuth (= 4.3.1)
@@ -55,6 +58,7 @@ PODS:
   - UIColor_Hex_Swift (4.0.1)
 
 DEPENDENCIES:
+  - Charts
   - Firebase/Auth (~> 4.5.0)
   - Firebase/Core
   - Firebase/Database
@@ -67,6 +71,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Charts
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -86,6 +91,7 @@ SPEC REPOS:
     - UIColor_Hex_Swift
 
 SPEC CHECKSUMS:
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   Firebase: d83d287bdb6b1c78320561482706d1fcfc8ddfc1
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
   FirebaseAuth: e7c2b1359c2df4af23a568100a8eace0b8c507e4
@@ -104,6 +110,6 @@ SPEC CHECKSUMS:
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
   UIColor_Hex_Swift: c5ff88470499383b8fd85302d59344bb24ba9436
 
-PODFILE CHECKSUM: 43d41d9739642139a18ed7f1c0d17e9ecccbe50b
+PODFILE CHECKSUM: 756b58a14bcda3c5c4b7991ad02ef48f92ad0293
 
 COCOAPODS: 1.5.2

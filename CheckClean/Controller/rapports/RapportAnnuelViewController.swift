@@ -61,6 +61,22 @@ class RapportAnnuelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        office.setTitle(NSLocalizedString("BTN_QUALITY_OFFICE", comment: ""), for: .normal)
+        openspace.setTitle(NSLocalizedString("BTN_QUALITY_OPENSPACE", comment: ""), for: .normal)
+        meettingroom.setTitle(NSLocalizedString("BTN_QUALITY_METTINGROOM", comment: ""), for: .normal)
+        relaxroom.setTitle(NSLocalizedString("BTN_QUALITY_RELAXROOM", comment: ""), for: .normal)
+        kitchenette.setTitle(NSLocalizedString("BTN_QUALITY_KICHENETTE", comment: ""), for: .normal)
+        restaurant.setTitle(NSLocalizedString("BTN_QUALITY_RESTAURANT", comment: ""), for: .normal)
+        douche.setTitle(NSLocalizedString("BTN_QUALITY_SHOWER", comment: ""), for: .normal)
+        wc.setTitle(NSLocalizedString("BTN_QUALITY_WC", comment: ""), for: .normal)
+        parking.setTitle(NSLocalizedString("BTN_QUALITY_PARKING", comment: ""), for: .normal)
+        btnSendRapport.setTitle(NSLocalizedString("BTN_QUALITY_SEND", comment: ""), for: .normal)
+        
+        
+        let btnCharts = UIBarButtonItem(image: UIImage(named: "charts"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(mycharts))
+        self.navigationController?.navigationBar.topItem?.rightBarButtonItem = btnCharts
+        
         myRapport = [String:[ZoneControl]]()
         btnSendRapport.isEnabled = false
         let bName = UserDefaults.standard.string(forKey: "BuldingName")
@@ -149,6 +165,14 @@ class RapportAnnuelViewController: UIViewController {
         numZoneRouge = 0
         
        
+    }
+    
+    //ouverture du charts pour recupere les points de anciens controls pour cree un graphique
+    @objc func mycharts() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc =  storyboard.instantiateViewController(withIdentifier: "MyChartsViewController") as! MyChartsViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
    
     @IBAction func btn(_ sender: UIButton) {
@@ -283,14 +307,14 @@ class RapportAnnuelViewController: UIViewController {
             
             let p = ( (zoneRouge * 100 ) /  r ) * 0.6
             let z = ( (zonneBleu * 100 ) /  b ) * 0.4
-            pdf.addText("pourcentage \(p + z)", font: UIFont(name: "Bright-Script-Clean", size: CGFloat(20))!, textColor: UIColor.blue)
+            pdf.addText("pourcentage \(Int(p + z))", font: UIFont(name: "Bright-Script-Clean", size: CGFloat(20))!, textColor: UIColor.blue)
             
             let pdfData = pdf.generatePDFdata()
             
             ref = Database.database().reference(withPath: "Controls-Bulding")
             let idControl = ref.childByAutoId().key
             let info = [
-                "note" : p + z,
+                "note" : Int(p + z),
                 "date" : dateformat.string(from: date)
                 ] as [String : Any]
             ref.child(bulding.id).child(idControl).setValue(info)

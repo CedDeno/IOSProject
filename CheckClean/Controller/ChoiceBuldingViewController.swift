@@ -12,24 +12,23 @@ import Firebase
 
 class ChoiceBuldingViewController: UIViewController {
     
+    @IBOutlet weak var textListBulding: UILabel!
     var ref: DatabaseReference!
     var tabBulding = [Bulding]()
     var currentUser: User!
-
+    let animationView = LOTAnimationView(name: "checkclean")
+    
     @IBOutlet weak var choiceBulding: UIPickerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.rightBarButtonItem?.tintColor = UIColor(cgColor: ColorNav().getColorButton())
-        self.navigationController?.navigationBar.barTintColor = UIColor(cgColor: ColorNav().getColorNav())
+        textListBulding.text = NSLocalizedString("TEXT_TITLE_LIST_BULDING", comment: "")
         
-        let animationView = LOTAnimationView(name: "checkclean")
-        animationView.frame = CGRect(x: 30, y: 20, width: 10, height: 50)
+        animationView.frame = CGRect(x: 0, y: 100, width: self.view.frame.width, height: self.view.frame.height/5)
         self.view.addSubview(animationView)
-        animationView.play{ (finished) in
-            
-        }
+        animationView.animationSpeed = CGFloat(2)
+        animationView.play()
         
        currentUserExiste()
         
@@ -52,9 +51,10 @@ class ChoiceBuldingViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         currentUserExiste()
+        animationView.play()
         
         self.tabBulding.removeAll()
-        self.tabBulding.append(Bulding(name: "Veuillez selectione un Bâtiment", address: ""))
+        self.tabBulding.append(Bulding(name: NSLocalizedString("TEXT_LIST_BULDING", comment: ""), address: ""))
         self.choiceBulding.reloadAllComponents()
         self.currentUser = Auth.auth().currentUser
         
@@ -86,7 +86,7 @@ class ChoiceBuldingViewController: UIViewController {
                         for bulding in dataSnapshop.children {
                             self.tabBulding.append(Bulding(snap: bulding as! DataSnapshot))
                         }
-                        print("\(self.tabBulding.count)")
+                        
                         self.choiceBulding.reloadAllComponents()
                     }
                 }

@@ -16,6 +16,16 @@ class BuldingStructurViewController: UIViewController {
     var numberCheck = false
     var idBulding: String!
     
+    @IBOutlet weak var labelOffices: UILabel!
+    @IBOutlet weak var labelMeettingRoom: UILabel!
+    @IBOutlet weak var labelOpenSpace: UILabel!
+    @IBOutlet weak var labelRelaxRoom: UILabel!
+    @IBOutlet weak var labelBathRoom: UILabel!
+    @IBOutlet weak var labelShower: UILabel!
+    @IBOutlet weak var labelRestaurant: UILabel!
+    @IBOutlet weak var labelParking: UILabel!
+    @IBOutlet weak var labelKitchinette: UILabel!
+    
     @IBOutlet weak var numOffices: UITextField!
     @IBOutlet weak var numMettingRoom: UITextField!
     @IBOutlet weak var numOpenSpaces: UITextField!
@@ -31,6 +41,15 @@ class BuldingStructurViewController: UIViewController {
         super.viewDidLoad()
 
         idBulding = UserDefaults.standard.string(forKey: "BuldingId")
+        labelOffices.text = NSLocalizedString("LABEL_QUALITY_OFFICE", comment: "")
+        labelShower.text = NSLocalizedString("LABEL_QUALITY_SHOWER", comment: "")
+        labelParking.text = NSLocalizedString("LABEL_QUALITY_PARKING", comment: "")
+        labelBathRoom.text = NSLocalizedString("LABEL_QUALITY_WC", comment: "")
+        labelOpenSpace.text = NSLocalizedString("LABEL_QUALITY_OPENSPACE", comment: "")
+        labelRelaxRoom.text = NSLocalizedString("LABEL_QUALITY_RELAXROOM", comment: "")
+        labelRestaurant.text = NSLocalizedString("LABEL_QUALITY_RESTAURANT", comment: "")
+        labelKitchinette.text = NSLocalizedString("LABEL_QUALITY_KICHENETTE", comment: "")
+        labelMeettingRoom.text = NSLocalizedString("LABEL_QUALITY_METTINGROOM", comment: "")
         
     }
     
@@ -103,12 +122,12 @@ class BuldingStructurViewController: UIViewController {
                     self.ref = Database.database().reference()
                     ref.child("BuldingStruct").child(self.idBulding).setValue(tabStruct)
                     
-                    self.view.makeToast("Les changements sont accepter")
+                    self.view.makeToast(NSLocalizedString("TOAST_BULDING_STRUCT_CHANGE", comment: ""))
                     
                     self.tabBarController?.selectedIndex = 0
             }
         } else {
-            self.view.makeToast("Aucun changement à été effectuer.")
+            self.view.makeToast(NSLocalizedString("TOAST_BULDING_STRUCT_NOT_CHANGE", comment: ""))
         }
     }
     

@@ -15,6 +15,12 @@ protocol AddInfoRapport: NSObjectProtocol {
 
 class AddViewController: UIViewController {
 
+    @IBOutlet weak var btnImportPicture: UIButton!
+    @IBOutlet weak var btnNavCancell: UIBarButtonItem!
+    @IBOutlet weak var labelAddReportNameLocal: UILabel!
+    @IBOutlet weak var labelAddReportDescription: UILabel!
+    @IBOutlet weak var labelAddReportScore: UILabel!
+    @IBOutlet weak var btnAddReportCancell: UIButton!
     var localName: String!
     var delegat: AddInfoRapport!
     var button: UIButton!
@@ -28,12 +34,19 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        labelAddReportNameLocal.text = NSLocalizedString("LABEL_ADD_REPORT_NAME_LOCAL", comment: "")
+        labelAddReportDescription.text = NSLocalizedString("LABEL_ADD_REPORT_DESCRIPTION", comment: "")
+        labelAddReportScore.text = NSLocalizedString("LABEL_ADD_REPORT_SCORE", comment: "")
+        btnNavCancell.title = NSLocalizedString("BTN_CANCEL", comment: "")
+        btnImportPicture.setTitle(NSLocalizedString("BTN_RAPPORT_PICTURE_LIBRARY", comment: ""), for: .normal)
+        btnAddReportCancell.setTitle(NSLocalizedString("BTN_ADD_TO_REPORT", comment: ""), for: .normal)
+        
         desc.layer.borderColor = UIColor(red: 186/255, green: 186/255, blue: 186/255, alpha: 0.5).cgColor
         desc.layer.borderWidth = 0.9
         desc.layer.cornerRadius = 10
-        
-        self.view.makeToast("La Note par defaut est à 1 / 4. La plus haute 5/5",
-                            duration: 4.0, title: "Rappel", image: UIImage(named: "attention"), completion: nil)
+        self.view.makeToast(NSLocalizedString("TOAST_MESSAGE_FOR_REPORT", comment: ""),
+                            duration: 4.0, title: NSLocalizedString("TOAST_MESSAGE_TITLE_REPORT", comment: ""), image: UIImage(named: "attention"), completion: nil)
     }
 
     
@@ -67,33 +80,33 @@ class AddViewController: UIViewController {
     
     func showToast(_ message: String) {
         var img = UIImage(named: "bad")
-        var title = "Trés mauvais"
+        var title = NSLocalizedString("TOAST_SCORE_SBAD", comment: "")
         switch Double( message) {
         case 1.0:
             img = UIImage.init(named: "sBad")
-            title = "Mauvais"
+            title = NSLocalizedString("TOAST_SCORE_SBAD", comment: "")
             break
         case 2.0:
             img = UIImage.init(named: "middle")
-            title = "Moyenne"
+            title = NSLocalizedString("TOAST_SCORE_MIDDLE", comment: "")
             break
         case 3.0:
             img = UIImage.init(named: "correct")
-            title = "Acceptable"
+            title = NSLocalizedString("TOAST_SCORE_CORRECT", comment: "")
             break
         case 4.0:
             img = UIImage.init(named: "parfait")
-            title = "Correct"
+            title = NSLocalizedString("TOAST_SCORE_PERFECT", comment: "")
             break
         case 5.0:
             img = UIImage.init(named: "star")
-            title = "Parfait"
+            title = NSLocalizedString("TOAST_SCORE_MORE_PERFECT", comment: "")
             break
         default:
             break
         }
         
-        self.view.makeToast("Note : \(message) / 4.0", duration: 3.0, title: title, image: img, completion: nil)
+        self.view.makeToast("\(NSLocalizedString("LABEL_ADD_REPORT_SCORE", comment: "")) : \(message) / 4.0", duration: 3.0, title: title, image: img, completion: nil)
         
     }
     
@@ -103,7 +116,7 @@ class AddViewController: UIViewController {
     
     func checkInfo(value: String) -> Bool {
         if value.count == 0 {
-            self.view.makeToast("Veuillez remplire tous les champs")
+            self.view.makeToast(NSLocalizedString("TOAST_MESSAGE_FOR_REPORT_ERROR", comment: ""))
             return false
         }
         return true

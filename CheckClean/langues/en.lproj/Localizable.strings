@@ -1,0 +1,111 @@
+/* 
+  Localizable.strings
+  CheckClean
+
+  Created by Machado Sergio on 30/06/18.
+  Copyright © 2018 Machado Sergio. All rights reserved.
+*/
+//en
+"PLACEHOLDER_LOGIN" = "Email Address";
+"PLACEHOLDER_PASSWORD" = "Password";
+"PLACEHOLDER_ADD_BULDING_NAME" = "Bulding Name";
+"PLACEHOLDER_ADD_BULDING_STREET" = "46 Smith Street";
+"PLACEHOLDER_ADD_BULDING_ZIP" = "1040";
+"PLACEHOLDER_ADD_BULDING_TOWN" = "Bruxelles";
+"PLACEHOLDER_TODO" = "Add TO DO List";
+
+
+"BTN_SEND" = "Send";
+"BTN_CONNECTION" = "Connection";
+"BTN_INSCRIPTION" = "Register";
+"BTN_CANCEL" = "Cancel";
+"BTN_ADD_BULDING" = "Add Bulding";
+"BTN_TODO" = " TO DO ";
+"BTN_RAPPORT_PICTURE_LIBRARY" = "  Add pictutre  ";
+"BTN_QUALITY_OFFICE" = "Offices";
+"BTN_QUALITY_OPENSPACE" = "Open Space";
+"BTN_QUALITY_METTINGROOM" = "Meeting Room";
+"BTN_QUALITY_KICHENETTE" = "Kichenette(s)";
+"BTN_QUALITY_RESTAURANT" = "Restaurant";
+"BTN_QUALITY_SHOWER" = "Showers";
+"BTN_QUALITY_WC" ="Bathroom(s)";
+"BTN_QUALITY_PARKING" = "Parking";
+"BTN_QUALITY_RELAXROOM" = "Relax Room";
+"BTN_QUALITY_SEND" = "Send Report";
+"BTN_SETTING_SAVE" = "Save";
+"BTN_SETTING_MAP" = "Map";
+"BTN_SETTING_PASSWORD" = "Password";
+"BTN_SETTING_SETTING" = "Settings";
+"BTN_ADD_TEAM_AJOUTER" = "ADD";
+"BTN_ADD_TO_REPORT" = "Add To Report";
+
+
+"TEXT_TITLE_LIST_BULDING" = "My bulding list";
+"TEXT_SETTING_PROFIL" = "MY PROFILE";
+"TEXT_PASSWORD" = "Password Reset";
+"TEXT_INSCRIPTION" = "Registration";
+
+"LABEL_ADD_BULDING_NAME" = "Bulding name :";
+"LABEL_ADD_BULDING_ADDRESS" = "Bulding Street :";
+"LABEL_ADD_BULDING_ZIP" = "Zip :";
+"LABEL_ADD_BULDING_TOWN" = "Town :";
+"LABEL_RAPPORT_SUBJET" = "Subjet :";
+"LABEL_RAPPORT_COMMENT" = "Comment";
+"LABEL_QUALITY_OFFICE" = "Offices";
+"LABEL_QUALITY_OPENSPACE" = "Open Space";
+"LABEL_QUALITY_METTINGROOM" = "Meeting Room";
+"LABEL_QUALITY_KICHENETTE" = "Kichenette(s)";
+"LABEL_QUALITY_RESTAURANT" = "Restaurant";
+"LABEL_QUALITY_SHOWER" = "Showers";
+"LABEL_QUALITY_WC" ="Bathroom(s)";
+"LABEL_QUALITY_PARKING" = "Parking";
+"LABEL_QUALITY_RELAXROOM" = "Relax Room";
+"LABEL_SETTING_NAME" = "First Name :";
+"LABEL_SETTING_LAST_NAME" = "Last Name :";
+"LABEL_SETTING_PHONE" = "Phone :";
+"LABEL_ADD_REPORT_NAME_LOCAL" = "Name of the Local";
+"LABEL_ADD_REPORT_DESCRIPTION" = "Description";
+"LABEL_ADD_REPORT_SCORE" = "Score";
+"LABEL_ADD_TEAM" = "Add Team";
+"LABEL_ADD_TEAM_CLIENT" = "CLIENT ?";
+
+"ALERT_LOGIN_TILTE" = "CONNECTION ERROR";
+"ALERT_LOGIN_MESSAGE" = "Email Address or Password wrong";
+"MESSAGE_OK" = "OK";
+"PLACEHOLDER_REPAT_PASSWORD" = "Repeat Password";
+"ALERT_REGISTER_TITLE" = "SUCCESS";
+"TEXT_LIST_BULDING" = "Please Select a Building";
+"ALERT_ADD_BULDING_TITLE_ADD" = "Add Bulding";
+"ALERT_ADD_BULDING_MESSAGE_ADD" = "Your building has been add.";
+"ALERT_ADD_BULDING_ERROR_TITLE" = "Please correct the fields!" ;
+"ALERT_ADD_MESSAGE_ERROR" = "Please fill in all fields or correct mistakes.";
+"PLACEHOLDER_REPORT_SUBJET" = "Disagreement, Dispute, Disputed Point, Doubt. ";
+"TOAST_REPORT_ERROR" = "Please fill in all fields or correct mistakes.";
+"TOAST_BULDING_STRUCT_CHANGE" = "Changes are accept.";
+"TOAST_BULDING_STRUCT_NOT_CHANGE" = "No changes have been made.";
+"BTN_SIGNOUT" = "Sign out";
+"TEXT_SETTING" = "My Profil";
+"TOAST_MESSAGE_FOR_REPORT" = "The default rating is 1 / 4. The highest 5/5";
+"TOAST_MESSAGE_FOR_REPORT_ERROR" = "Please fill in all fields";
+"TOAST_SCORE_SBAD" = "BAD";
+"TOAST_SCORE_BAD" = "VERY BAD";
+"TOAST_SCORE_MIDDLE" = "MIDDLE";
+"TOAST_SCORE_CORRECT" = "RIGHT";
+"TOAST_SCORE_PERFECT" = "PERFECT";
+"TOAST_SCORE_MORE_PERFECT" = "MORE PERFECT EXTRA POINT";
+"TOAST_MESSAGE_TITLE_REPORT" = "Reminder";
+"BTN_BACK" = "Back";
+"TOAST_CHANGE_PASSWORD_ERROR" = "Please check if all the fields are filled in or if the passwords are equal.";
+"TOAST_CHANGE_PASSWORD_SUCCESS" = "Congratulations your password has been correctly changed.";
+
+
+
+
+
+
+
+
+
+
+
+

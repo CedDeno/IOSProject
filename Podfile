@@ -14,4 +14,5 @@ pod 'SimplePDF', '~> 3.0.0'
 pod 'lottie-ios', '~> 2.5.0'
 pod 'IQKeyboardManagerSwift', '5.0.0'
 pod 'UIColor_Hex_Swift', '~> 4.0.1'
+pod 'Charts'
 end

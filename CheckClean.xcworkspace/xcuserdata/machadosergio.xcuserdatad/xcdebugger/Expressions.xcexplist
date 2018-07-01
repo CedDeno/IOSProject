@@ -3,7 +3,12 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #1 in ViewController.btnConnection(_:):ViewController.swift">
+         contextName = "closure #1 in InscriptionViewController.btnInscription(_:):InscriptionViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "FIRAuthErrorCodeEmailAlreadyInUse">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "AddBuldingViewController.btnAddBulding(_:):AddBuldingViewController.swift">
@@ -22,18 +27,29 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "RapportAnnuelViewController.sendRapport(_:):RapportAnnuelViewController.swift">
+         contextName = "SettingsViewController.init(coder:):SettingsViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "myRapport.zone">
+               value = "userCurrent">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in InscriptionViewController.btnInscription(_:):InscriptionViewController.swift">
+         contextName = "closure #1 in SettingsViewController.dataUserCurrent():SettingsViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "FIRAuthErrorCodeEmailAlreadyInUse">
+               value = "userCurrent">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ViewController.btnConnection(_:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "RapportAnnuelViewController.sendRapport(_:):RapportAnnuelViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "myRapport.zone">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

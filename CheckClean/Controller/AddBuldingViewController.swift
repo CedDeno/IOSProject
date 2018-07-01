@@ -13,6 +13,10 @@ class AddBuldingViewController: UIViewController {
 
     var ref: DatabaseReference!
     
+    @IBOutlet weak var labelBuldingName: UILabel!
+    @IBOutlet weak var labelBuldingStreet: UILabel!
+    @IBOutlet weak var labelBuldingZip: UILabel!
+    @IBOutlet weak var labelBuldingTown: UILabel!
     @IBOutlet weak var btnAnnuler: UIButton!
     @IBOutlet weak var btnAddbulding: UIButton!
     @IBOutlet weak var nameBulding: UITextField!
@@ -28,9 +32,20 @@ class AddBuldingViewController: UIViewController {
     @IBOutlet weak var townBulding: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        labelBuldingName.text = NSLocalizedString("LABEL_ADD_BULDING_NAME", comment: "")
+        labelBuldingStreet.text = NSLocalizedString("LABEL_ADD_BULDING_ADDRESS", comment: "")
+        labelBuldingZip.text = NSLocalizedString("LABEL_ADD_BULDING_ZIP", comment: "")
+        labelBuldingTown.text = NSLocalizedString("LABEL_ADD_BULDING_TOWN", comment: "")
+        nameBulding.placeholder = NSLocalizedString("PLACEHOLDER_ADD_BULDING_NAME", comment: "")
+        adressBulding.placeholder = NSLocalizedString("PLACEHOLDER_ADD_BULDING_STREET", comment: "")
+        zipBulding.placeholder = NSLocalizedString("PLACEHOLDER_ADD_BULDING_ZIP", comment: "")
+        villeBulding.placeholder = NSLocalizedString("PLACEHOLDER_ADD_BULDING_TOWN", comment: "")
+        
         btnAddbulding.backgroundColor = UIColor(cgColor: ColorNav().getColorButton())
+        btnAddbulding.setTitle(NSLocalizedString("BTN_ADD_BULDING", comment: ""), for: .normal)
        btnAnnuler.backgroundColor = UIColor(cgColor: ColorNav().getColorButton())
+        btnAnnuler.setTitle(NSLocalizedString("BTN_CANCEL", comment: ""), for: .normal)
     }
     
     //checking si user entre donnes correctes
@@ -119,10 +134,10 @@ class AddBuldingViewController: UIViewController {
                 //ref.child("User").child(userCurrent!).updateChildValues(["buldings":[key:key] as [String : Any]])
                 ref.child("Users").child(userCurrent!).child("buldings").child(key).setValue(key)
                 
-                let alert = UIAlertController(title: "Building Ajouter",
-                                              message: "Votre bâtiment à été correctement.",
+                let alert = UIAlertController(title: NSLocalizedString("ALERT_ADD_BULDING_TITLE_ADD", comment: ""),
+                                              message: NSLocalizedString("ALERT_ADD_BULDING_MESSAGE_ADD", comment: ""),
                                               preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { (_) in
+                alert.addAction(UIAlertAction(title: NSLocalizedString("MESSAGE_OK", comment: ""), style: .cancel, handler: { (_) in
                     
                     self.dismiss(animated: true, completion: nil)
                 }))
@@ -132,8 +147,8 @@ class AddBuldingViewController: UIViewController {
             }
         }else {
             
-            let alert = UIAlertController(title: "Veuillez corriger les champs!",
-                                          message: "Veuillez remplir tous les champs ou corriger.",
+            let alert = UIAlertController(title:NSLocalizedString("ALERT_ADD_BULDING_ERROR_TITLE", comment: ""),
+                                          message:NSLocalizedString("ALERT_ADD_MESSAGE_ERROR", comment: ""),
                                           preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
             

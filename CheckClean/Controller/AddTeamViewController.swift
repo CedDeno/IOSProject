@@ -15,10 +15,21 @@ class AddTeamViewController: UIViewController {
     var ref: DatabaseReference!
     var bulding = Bulding()
     var s: String = "Team"
+    
+    @IBOutlet weak var labelClient: UILabel!
+    @IBOutlet weak var labelTeam: UILabel!
+    @IBOutlet weak var btnAddTeam: UIButton!
+    
+    @IBOutlet weak var btnCancell: UIButton!
     @IBOutlet weak var emailToCheck: UITextField!
     @IBOutlet weak var statusTeam: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        labelTeam.text = NSLocalizedString("LABEL_ADD_TEAM", comment: "")
+        labelClient.text = NSLocalizedString("LABEL_ADD_TEAM_CLIENT", comment: "")
+        btnCancell.setTitle(NSLocalizedString("BTN_CANCEL", comment: ""), for: .normal)
+        btnAddTeam.setTitle(NSLocalizedString("BTN_ADD_TEAM_AJOUTER", comment: ""), for: .normal)
     }
     
     
@@ -72,5 +83,10 @@ class AddTeamViewController: UIViewController {
         emailToCheck.resignFirstResponder()
         super.touchesBegan(touches, with: event)
     }
+    
+    @IBAction func cancellAdd(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
 }

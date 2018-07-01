@@ -15,7 +15,6 @@
 		4802CA9C2095CE6A00227E61 /* CheckCleanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802CA9B2095CE6A00227E61 /* CheckCleanTests.swift */; };
 		4802CAA72095CE6A00227E61 /* CheckCleanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802CAA62095CE6A00227E61 /* CheckCleanUITests.swift */; };
 		480873E720CE983C009059A6 /* checkclean.json in Resources */ = {isa = PBXBuildFile; fileRef = 480873E620CE983C009059A6 /* checkclean.json */; };
-		480873EB20CEA146009059A6 /* compo.json in Resources */ = {isa = PBXBuildFile; fileRef = 480873EA20CEA145009059A6 /* compo.json */; };
 		481EFF0D20DD1712009BAE62 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481EFF0C20DD1712009BAE62 /* SettingsViewController.swift */; };
 		481EFF0F20DD1721009BAE62 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481EFF0E20DD1721009BAE62 /* MapViewController.swift */; };
 		481EFF1120DD1742009BAE62 /* PasswordChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481EFF1020DD1742009BAE62 /* PasswordChangeViewController.swift */; };
@@ -29,6 +28,7 @@
 		4828DE2E20D3CD01007C1512 /* RapportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828DE2D20D3CD01007C1512 /* RapportViewController.swift */; };
 		4829434620B89C64000C81BA /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4829434520B89C64000C81BA /* TeamViewController.swift */; };
 		482BB6E920B81AB90029A367 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BB6E820B81AB90029A367 /* TabBarViewController.swift */; };
+		482FA92A20E675B600F80EA9 /* for me .swift in Sources */ = {isa = PBXBuildFile; fileRef = 482FA92920E675B600F80EA9 /* for me .swift */; };
 		483AFC0F20B4BF0E00F2E81C /* ListUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483AFC0720B4BF0E00F2E81C /* ListUserTableViewCell.swift */; };
 		483AFC1020B4BF0E00F2E81C /* ToDOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483AFC0820B4BF0E00F2E81C /* ToDOViewController.swift */; };
 		483AFC1120B4BF0E00F2E81C /* ChoiceBuldingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483AFC0920B4BF0E00F2E81C /* ChoiceBuldingViewController.swift */; };
@@ -44,8 +44,11 @@
 		4847247820C572B80033B381 /* UiimageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4847247720C572B80033B381 /* UiimageExtension.swift */; };
 		4867520920E2AA2D005139A2 /* ColorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867520820E2AA2C005139A2 /* ColorApp.swift */; };
 		48691E2E20A6036D00DA66B4 /* UserDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48691E2D20A6036D00DA66B4 /* UserDb.swift */; };
+		48693F4920E8213B007A28C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48693F4B20E8213B007A28C9 /* Localizable.strings */; };
+		48693F4F20E82270007A28C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48693F5120E82270007A28C9 /* Localizable.strings */; };
 		48C30AE8209AFDB400E3CC64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48C30AE7209AFDB400E3CC64 /* GoogleService-Info.plist */; };
 		48DE5C4220CFABA3002DEE59 /* AddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE5C4120CFABA3002DEE59 /* AddTeamViewController.swift */; };
+		48F9837520E61DED0001FBA5 /* MyChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F9837420E61DED0001FBA5 /* MyChartsViewController.swift */; };
 		48FCB28620A5962B0048AE63 /* Bulding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FCB28520A5962B0048AE63 /* Bulding.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +84,6 @@
 		4802CAA62095CE6A00227E61 /* CheckCleanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCleanUITests.swift; sourceTree = "<group>"; };
 		4802CAA82095CE6A00227E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		480873E620CE983C009059A6 /* checkclean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkclean.json; sourceTree = "<group>"; };
-		480873EA20CEA145009059A6 /* compo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = compo.json; sourceTree = "<group>"; };
 		481EFF0C20DD1712009BAE62 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		481EFF0E20DD1721009BAE62 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		481EFF1020DD1742009BAE62 /* PasswordChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangeViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		4828DE2D20D3CD01007C1512 /* RapportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapportViewController.swift; sourceTree = "<group>"; };
 		4829434520B89C64000C81BA /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		482BB6E820B81AB90029A367 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		482FA92920E675B600F80EA9 /* for me .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "for me .swift"; sourceTree = "<group>"; };
 		483AFC0720B4BF0E00F2E81C /* ListUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListUserTableViewCell.swift; sourceTree = "<group>"; };
 		483AFC0820B4BF0E00F2E81C /* ToDOViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDOViewController.swift; sourceTree = "<group>"; };
 		483AFC0920B4BF0E00F2E81C /* ChoiceBuldingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceBuldingViewController.swift; sourceTree = "<group>"; };
@@ -110,8 +113,12 @@
 		4847247720C572B80033B381 /* UiimageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiimageExtension.swift; sourceTree = "<group>"; };
 		4867520820E2AA2C005139A2 /* ColorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorApp.swift; sourceTree = "<group>"; };
 		48691E2D20A6036D00DA66B4 /* UserDb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDb.swift; sourceTree = "<group>"; };
+		48693F4A20E8213B007A28C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		48693F4C20E82254007A28C9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		48693F5020E82270007A28C9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		48C30AE7209AFDB400E3CC64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		48DE5C4120CFABA3002DEE59 /* AddTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamViewController.swift; sourceTree = "<group>"; };
+		48F9837420E61DED0001FBA5 /* MyChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChartsViewController.swift; sourceTree = "<group>"; };
 		48FCB28520A5962B0048AE63 /* Bulding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulding.swift; sourceTree = "<group>"; };
 		64AC6BC8A2AF198BDFAB0DAC /* Pods_CheckClean.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckClean.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		987F530FD20EFFCBC26A5F49 /* Pods-CheckClean.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckClean.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckClean/Pods-CheckClean.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +175,7 @@
 		4802CA852095CE6A00227E61 /* CheckClean */ = {
 			isa = PBXGroup;
 			children = (
+				48693F4620E82115007A28C9 /* langues */,
 				4867520720E2AA0E005139A2 /* color */,
 				4824883620C6B09300CB7692 /* fonts */,
 				4847247620C5726C0033B381 /* extension */,
@@ -180,7 +188,6 @@
 				4802CA8F2095CE6A00227E61 /* LaunchScreen.storyboard */,
 				48C30AE7209AFDB400E3CC64 /* GoogleService-Info.plist */,
 				480873E620CE983C009059A6 /* checkclean.json */,
-				480873EA20CEA145009059A6 /* compo.json */,
 				4802CA922095CE6A00227E61 /* Info.plist */,
 			);
 			path = CheckClean;
@@ -212,11 +219,10 @@
 				481EFF1420DD178C009BAE62 /* cells */,
 				481EFF0B20DD16FB009BAE62 /* settings */,
 				483AFC0A20B4BF0E00F2E81C /* AddBuldingViewController.swift */,
+				482FA92920E675B600F80EA9 /* for me .swift */,
 				483AFC0B20B4BF0E00F2E81C /* BuldingStructurViewController.swift */,
 				483AFC0920B4BF0E00F2E81C /* ChoiceBuldingViewController.swift */,
-				483AFC0E20B4BF0E00F2E81C /* InscriptionViewController.swift */,
 				483AFC0820B4BF0E00F2E81C /* ToDOViewController.swift */,
-				483AFC0D20B4BF0E00F2E81C /* ViewController.swift */,
 				482BB6E820B81AB90029A367 /* TabBarViewController.swift */,
 				4829434520B89C64000C81BA /* TeamViewController.swift */,
 				48DE5C4120CFABA3002DEE59 /* AddTeamViewController.swift */,
@@ -251,6 +257,7 @@
 				48201E5520C01608000D2B0E /* RapportAnnuelViewController.swift */,
 				483AFC0C20B4BF0E00F2E81C /* AddViewController.swift */,
 				4828DE2D20D3CD01007C1512 /* RapportViewController.swift */,
+				48F9837420E61DED0001FBA5 /* MyChartsViewController.swift */,
 			);
 			path = rapports;
 			sourceTree = "<group>";
@@ -258,6 +265,8 @@
 		481EFF1620DD17E2009BAE62 /* Logins */ = {
 			isa = PBXGroup;
 			children = (
+				483AFC0D20B4BF0E00F2E81C /* ViewController.swift */,
+				483AFC0E20B4BF0E00F2E81C /* InscriptionViewController.swift */,
 			);
 			path = Logins;
 			sourceTree = "<group>";
@@ -301,6 +310,15 @@
 				4867520820E2AA2C005139A2 /* ColorApp.swift */,
 			);
 			path = color;
+			sourceTree = "<group>";
+		};
+		48693F4620E82115007A28C9 /* langues */ = {
+			isa = PBXGroup;
+			children = (
+				48693F4B20E8213B007A28C9 /* Localizable.strings */,
+				48693F5120E82270007A28C9 /* Localizable.strings */,
+			);
+			path = langues;
 			sourceTree = "<group>";
 		};
 		48FCB28420A596090048AE63 /* model */ = {
@@ -442,12 +460,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				480873EB20CEA146009059A6 /* compo.json in Resources */,
 				4824883C20C6B55900CB7692 /* Dopestyle.ttf in Resources */,
 				4824883D20C6B55900CB7692 /* Bright Script Clean.ttf in Resources */,
 				4802CA912095CE6A00227E61 /* LaunchScreen.storyboard in Resources */,
 				48C30AE8209AFDB400E3CC64 /* GoogleService-Info.plist in Resources */,
+				48693F4F20E82270007A28C9 /* Localizable.strings in Resources */,
 				4802CA8E2095CE6A00227E61 /* Assets.xcassets in Resources */,
+				48693F4920E8213B007A28C9 /* Localizable.strings in Resources */,
 				4802CA8C2095CE6A00227E61 /* Main.storyboard in Resources */,
 				480873E720CE983C009059A6 /* checkclean.json in Resources */,
 			);
@@ -477,6 +496,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CheckClean/Pods-CheckClean-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
@@ -491,6 +511,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
@@ -542,6 +563,7 @@
 				483AFC1B20B4CED000F2E81C /* DatabaseManager.swift in Sources */,
 				483AFC1120B4BF0E00F2E81C /* ChoiceBuldingViewController.swift in Sources */,
 				4829434620B89C64000C81BA /* TeamViewController.swift in Sources */,
+				48F9837520E61DED0001FBA5 /* MyChartsViewController.swift in Sources */,
 				484665F120C22A4E00556493 /* DictionaryRapport.swift in Sources */,
 				481EFF0F20DD1721009BAE62 /* MapViewController.swift in Sources */,
 				482BB6E920B81AB90029A367 /* TabBarViewController.swift in Sources */,
@@ -554,6 +576,7 @@
 				483AFC1020B4BF0E00F2E81C /* ToDOViewController.swift in Sources */,
 				483AFC1220B4BF0E00F2E81C /* AddBuldingViewController.swift in Sources */,
 				481EFF1320DD1756009BAE62 /* ParametresViewController.swift in Sources */,
+				482FA92A20E675B600F80EA9 /* for me .swift in Sources */,
 				483AFC1620B4BF0E00F2E81C /* InscriptionViewController.swift in Sources */,
 				48691E2E20A6036D00DA66B4 /* UserDb.swift in Sources */,
 				483AFC1320B4BF0E00F2E81C /* BuldingStructurViewController.swift in Sources */,
@@ -609,8 +632,25 @@
 			isa = PBXVariantGroup;
 			children = (
 				4802CA902095CE6A00227E61 /* Base */,
+				48693F4C20E82254007A28C9 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		48693F4B20E8213B007A28C9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48693F4A20E8213B007A28C9 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		48693F5120E82270007A28C9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48693F5020E82270007A28C9 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -620,6 +660,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -677,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -15,14 +15,25 @@ class RapportViewController: UIViewController {
 
     var buldingName: String = ""
     
+    @IBOutlet weak var labelReportComment: UILabel!
+    @IBOutlet weak var labelReportSubjet: UILabel!
     @IBOutlet weak var btnSend: UIButton!
     @IBOutlet weak var imageRapport: UIImageView!
     @IBOutlet weak var textComment: UITextView!
     @IBOutlet weak var textSujet: UITextField!
+    @IBOutlet weak var btnAddPicture: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         buldingName = UserDefaults.standard.string(forKey: "BuldingName")!
+        labelReportSubjet.text = NSLocalizedString("LABEL_RAPPORT_SUBJET", comment: "")
+        labelReportComment.text = NSLocalizedString("LABEL_RAPPORT_COMMENT", comment: "")
+        textSujet.placeholder = NSLocalizedString("PLACEHOLDER_REPORT_SUBJET", comment: "")
+        btnSend.setTitle(NSLocalizedString("BTN_SEND", comment: ""), for: .normal)
+        btnSend.backgroundColor = UIColor(cgColor: ColorNav().getColorButton())
+        btnAddPicture.setTitle(NSLocalizedString("BTN_RAPPORT_PICTURE_LIBRARY", comment: ""), for: .normal)
+        btnAddPicture.backgroundColor = UIColor(cgColor: ColorNav().getColorButton())
+        
     }
     
     @IBAction func btnTakePicture(_ sender: Any) {
@@ -84,7 +95,7 @@ class RapportViewController: UIViewController {
                 self.present(activityViewController, animated: true, completion: nil)
                 
             } else {
-                self.view.makeToast("Veuillez introduir un Sujet ou un Commentaire")
+                self.view.makeToast(NSLocalizedString("TOAST_REPORT_ERROR", comment: ""))
             }
     }
     }

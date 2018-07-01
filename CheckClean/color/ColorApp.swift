@@ -14,7 +14,7 @@ class ColorNav {
     
     private let color_nav = UIColor("#1d566e").cgColor
     private let color_button = UIColor("#21aba5").cgColor
-    
+    private let colo_white = UIColor("#ffffff").cgColor
     
     func getColorNav() -> CGColor {
         return self.color_nav
@@ -22,6 +22,10 @@ class ColorNav {
     
     func getColorButton() -> CGColor {
         return self.color_button
+    }
+    
+    func getColorWhite() -> CGColor {
+        return self.colo_white
     }
     
 }

@@ -81,8 +81,8 @@ extension TeamViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListUserTableViewCell", for: indexPath) as! ListUserTableViewCell
-        cell.name.text = tabUser[indexPath.row].email
-        //ToDO ajouter phone number 
+        
+        cell.setCell(users: tabUser[indexPath.row]) 
         return cell
     }
     

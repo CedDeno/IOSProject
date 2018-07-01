@@ -1,0 +1,100 @@
+/* 
+  Localizable.strings
+  CheckClean
+
+  Created by Machado Sergio on 30/06/18.
+  Copyright © 2018 Machado Sergio. All rights reserved.
+*/
+//fr
+"PLACEHOLDER_LOGIN" = "Adresse e-mail";
+"PLACEHOLDER_PASSWORD" = "Mot de passe";
+"PLACEHOLDER_ADD_BULDING_NAME" = "Nom Bâtiment";
+"PLACEHOLDER_ADD_BULDING_STREET" = "46 rue Smith";
+"PLACEHOLDER_ADD_BULDING_ZIP" = "1040";
+"PLACEHOLDER_ADD_BULDING_TOWN" = "Bruxelles";
+"PLACEHOLDER_TODO" = "Ajouter à la liste des tâches";
+
+
+"BTN_SEND" = "Envoyer";
+"BTN_CONNECTION" = "Connexion";
+"BTN_INSCRIPTION" = "Enregistrer";
+"BTN_CANCEL" = "Annuler";
+"BTN_ADD_BULDING" = "Ajouter un Bâtiment";
+"BTN_TODO" = "TO DO";
+"BTN_RAPPORT_PICTURE_LIBRARY" = "Ajouter Image";
+"BTN_QUALITY_OFFICE" = "Bureaux";
+"BTN_QUALITY_OPENSPACE" = "Open Space";
+"BTN_QUALITY_METTINGROOM" = "Salle de réunion";
+"BTN_QUALITY_KICHENETTE" = "Kichenette(s)";
+"BTN_QUALITY_RESTAURANT" = "Restaurant";
+"BTN_QUALITY_SHOWER" = "Douches";
+"BTN_QUALITY_WC" = "Toilettes";
+"BTN_QUALITY_PARKING" = "Parking";
+"BTN_QUALITY_RELAXROOM" = "Salle de Relaxation";
+"BTN_QUALITY_SEND" = "Envoyer Rapport";
+"BTN_SETTING_SAVE" = "Enregistre";
+"BTN_SETTING_MAP" = "Carte";
+"BTN_SETTING_PASSWORD" = "Mot de Passe";
+"BTN_SETTING_SETTING" = "Paramètres";
+"BTN_ADD_TEAM_AJOUTER" = "Ajouter à l'equipe";
+"BTN_ADD_TO_REPORT" = "Ajouter au Rapport";
+
+"TEXT_TITLE_LIST_BULDING" = "Ma liste de bulding";
+"TEXT_SETTING_PROFIL" = "Mon Profil";
+"TEXT_PASSWORD" = "Réinitialisation du mot de passe";
+"TEXT_INSCRIPTION" = "Inscription";
+
+"LABEL_ADD_BULDING_NAME" = "Nom Bâtiment :";
+"LABEL_ADD_BULDING_ADDRESS" = "Adresse Bâtiment :";
+"LABEL_ADD_BULDING_ZIP" = "Code Postal :";
+"LABEL_ADD_BULDING_TOWN" = "Ville :";
+"LABEL_RAPPORT_SUBJET" = "Sujet :";
+"LABEL_RAPPORT_COMMENT" = "Commentaire";
+"LABEL_QUALITY_OFFICE" = "Bureaux";
+"LABEL_QUALITY_OPENSPACE" = "Open Space";
+"LABEL_QUALITY_METTINGROOM" = "Salle de réunion";
+"LABEL_QUALITY_KICHENETTE" = "Kichenette(s)";
+"LABEL_QUALITY_RESTAURANT" = "Restaurant";
+"LABEL_QUALITY_SHOWER" = "Douches";
+"LABEL_QUALITY_WC" = "Toilettes";
+"LABEL_QUALITY_PARKING" = "Parking";
+"LABEL_QUALITY_RELAXROOM" = "Salle de Relaxation";
+"LABEL_SETTING_NAME" = "Prénom :";
+"LABEL_SETTING_LAST_NAME" = "Nom :";
+"LABEL_SETTING_PHONE" = "Téléphone :";
+"LABEL_ADD_REPORT_NAME_LOCAL" = "Nom du Local :";
+"LABEL_ADD_REPORT_DESCRIPTION" = "Description :";
+"LABEL_ADD_REPORT_SCORE" = "Points : ";
+"LABEL_ADD_TEAM" = "Ajouter une personne";
+"LABEL_ADD_TEAM_CLIENT" = "Client ?";
+
+
+
+"ALERT_LOGIN_TILTE" = "ERREUR DE CONNEXION";
+"ALERT_LOGIN_MESSAGE" = "Adresse e-mail ou mot de passe erroné";
+"MESSAGE_OK" = "D'Accord";
+"PLACEHOLDER_REPAT_PASSWORD" = "Répéter le mot de passe";
+"ALERT_REGISTER_TITLE" = "Réussir";
+"TEXT_LIST_BULDING" = "Veuillez sélectionner un bâtiment";
+"ALERT_ADD_BULDING_TITLE_ADD" = "Ajouter un Bâtiment";
+"ALERT_ADD_BULDING_MESSAGE_ADD" = "Votre bâtiment a été ajouté.";
+"ALERT_ADD_BULDING_ERROR_TITLE" = "Veuillez corriger les champs!" ;
+"ALERT_ADD_MESSAGE_ERROR" = "Veuillez remplir tous les champs ou corriger les erreurs.";
+"PLACEHOLDER_REPORT_SUBJET" = "Désaccord, contestation, point litigieux, doute. ";
+"TOAST_REPORT_ERROR" = "Veuillez remplir tous les champs ou corriger les erreurs.";
+"TOAST_BULDING_STRUCT_CHANGE" = "Les modifications sont acceptées.";
+"TOAST_BULDING_STRUCT_NOT_CHANGE" = "Aucun changement n'a été effectué.";
+"BTN_SIGNOUT" = "Déconnexion";
+"TEXT_SETTING" = "Mon profil";
+"TOAST_MESSAGE_FOR_REPORT" = "La valeur par défaut est 1 / 4. Le plus haut 5/5.";
+"TOAST_MESSAGE_FOR_REPORT_ERROR" = "Veuillez remplir tous les champs";
+"TOAST_SCORE_SBAD" = "MAUVAIS";
+"TOAST_SCORE_BAD" = "TRÈS MAUVAIS";
+"TOAST_SCORE_MIDDLE" = "MOYEN";
+"TOAST_SCORE_CORRECT" = "Correct";
+"TOAST_SCORE_PERFECT" = "PARFAIT";
+"TOAST_SCORE_MORE_PERFECT" = "POINT EXTRA PLUS PERFECT";
+"TOAST_MESSAGE_TITLE_REPORT" = "Rappel";
+"BTN_BACK" = "Retour";
+"TOAST_CHANGE_PASSWORD_ERROR" = "Veuillez vérifier si tout le champs sont remplie ou si les mots de passe sont égaux.";
+"TOAST_CHANGE_PASSWORD_SUCCESS" = "Félicitation votre mot de pass à été correctement change.";
